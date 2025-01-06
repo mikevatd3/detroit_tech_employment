@@ -1,0 +1,635 @@
+{
+    "datasetName": "EMSI.US.Industry",
+    "versionName": "2024.4",
+    "attributes": {
+        "estabStartYear": "2004",
+        "minYearInclusive": "2001",
+        "estabYear": "2023",
+        "name": "Industry",
+        "path": "Industry",
+        "type": "dataset",
+        "currentJobsQuarters": "2023Q1,2023Q2,2023Q3,2023Q4",
+        "maxYearInclusive": "2034",
+        "description": "# Description\n\nEmsi's industry dataset contains information on industries back to 2001. Job counts are projected 10 years beyond the current calendar year; earnings are not projected. Available areas are nation, states, MSAs, counties, ZIPs, and tracts. Establishment data is not available for ZIP or tract level.\n\nWhen requesting MSA codes or ZIP codes as the area constraint in a query, the code must be prepended by MSA or ZIP, respectively (e.g. for ZIP code 98102, use 'ZIP98102')\n\n# Use Cases\n\n#### Questions answered by this dataset:\n\n* How many manufacturing jobs are projected to exist over the next 10 years in Calvert County, MD?\n* How many Insurance Carriers establishments are there in Nebraska?\n* What is the average wage for workers in hospitals in Ann Arbor, Michigan?\n* How much higher is the average wage today for workers in hospitals than it was in 2005?\n* How many health care jobs exist in the ZIP codes that make up downtown Seattle?\n* How do earnings for Registered Nurses differ in the various parts of Los Angeles County?\n\n# Metrics\n\n* Jobs: The number of occupied positions. This is not quite the same as workers because one worker might fill more than one position.\n* Wages: Total base earnings for the industry. Note that this figure is for the whole industry, not for the average worker in the industry.\n* Supplements: Total supplements for the industry. This figure is also for the whole industry, not for the average worker in the industry.\n* Establishments: The number of physical business locations.\n* Earnings: Total earnings for the industry. Sum of wages and supplements. This figure is also for the whole industry, not for the average worker in the industry.\n* EPW: Earnings Per Worker. The earnings figure (sum of wages and salaries) divided by the number of jobs in the industry.\n* SPW: Supplements Per Worker. Supplements for the industry divided by the number of jobs in the industry.\n* WPW: Wages Per Worker. Wages for the industry divided by the number of jobs in the industry.\n\n# Filters\n\n* Class of Worker\n* Area (Nation, State, MSA, County, ZIP, tract)\n* Industry (2 to 6-digit NAICS)\n* Year\n",
+        "earnYear": "2023",
+        "currentYear": "2023",
+        "countryCode": "us",
+        "datarun": "2024.4",
+        "displayName": "US Industry (Nation, State, MSA, County, ZIP, Census Tract)",
+        "releaseDate": "2024-09-29 16:48:45.3212857Z",
+        "numAggPaths_AreaID": "4",
+        "levelsStored_AreaID": "[1:[1,2,3,4],2:[2,3,4],3:[1,2,3,4],4:[2,3,4]]"
+    },
+    "dimensions": [
+        {
+            "name": "ClassOfWorker",
+            "levelsStored": [
+                "2"
+            ]
+        },
+        {
+            "name": "Area",
+            "levelsStored": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "name": "Industry",
+            "levelsStored": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ]
+        }
+    ],
+    "metrics": [
+        {
+            "name": "Jobs.2001"
+        },
+        {
+            "name": "Jobs.2002"
+        },
+        {
+            "name": "Jobs.2003"
+        },
+        {
+            "name": "Jobs.2004"
+        },
+        {
+            "name": "Jobs.2005"
+        },
+        {
+            "name": "Jobs.2006"
+        },
+        {
+            "name": "Jobs.2007"
+        },
+        {
+            "name": "Jobs.2008"
+        },
+        {
+            "name": "Jobs.2009"
+        },
+        {
+            "name": "Jobs.2010"
+        },
+        {
+            "name": "Jobs.2011"
+        },
+        {
+            "name": "Jobs.2012"
+        },
+        {
+            "name": "Jobs.2013"
+        },
+        {
+            "name": "Jobs.2014"
+        },
+        {
+            "name": "Jobs.2015"
+        },
+        {
+            "name": "Jobs.2016"
+        },
+        {
+            "name": "Jobs.2017"
+        },
+        {
+            "name": "Jobs.2018"
+        },
+        {
+            "name": "Jobs.2019"
+        },
+        {
+            "name": "Jobs.2020"
+        },
+        {
+            "name": "Jobs.2021"
+        },
+        {
+            "name": "Jobs.2022"
+        },
+        {
+            "name": "Jobs.2023"
+        },
+        {
+            "name": "Jobs.2024"
+        },
+        {
+            "name": "Jobs.2025"
+        },
+        {
+            "name": "Jobs.2026"
+        },
+        {
+            "name": "Jobs.2027"
+        },
+        {
+            "name": "Jobs.2028"
+        },
+        {
+            "name": "Jobs.2029"
+        },
+        {
+            "name": "Jobs.2030"
+        },
+        {
+            "name": "Jobs.2031"
+        },
+        {
+            "name": "Jobs.2032"
+        },
+        {
+            "name": "Jobs.2033"
+        },
+        {
+            "name": "Jobs.2034"
+        },
+        {
+            "name": "Wages.2001"
+        },
+        {
+            "name": "Wages.2002"
+        },
+        {
+            "name": "Wages.2003"
+        },
+        {
+            "name": "Wages.2004"
+        },
+        {
+            "name": "Wages.2005"
+        },
+        {
+            "name": "Wages.2006"
+        },
+        {
+            "name": "Wages.2007"
+        },
+        {
+            "name": "Wages.2008"
+        },
+        {
+            "name": "Wages.2009"
+        },
+        {
+            "name": "Wages.2010"
+        },
+        {
+            "name": "Wages.2011"
+        },
+        {
+            "name": "Wages.2012"
+        },
+        {
+            "name": "Wages.2013"
+        },
+        {
+            "name": "Wages.2014"
+        },
+        {
+            "name": "Wages.2015"
+        },
+        {
+            "name": "Wages.2016"
+        },
+        {
+            "name": "Wages.2017"
+        },
+        {
+            "name": "Wages.2018"
+        },
+        {
+            "name": "Wages.2019"
+        },
+        {
+            "name": "Wages.2020"
+        },
+        {
+            "name": "Wages.2021"
+        },
+        {
+            "name": "Wages.2022"
+        },
+        {
+            "name": "Wages.2023"
+        },
+        {
+            "name": "Supplements.2001"
+        },
+        {
+            "name": "Supplements.2002"
+        },
+        {
+            "name": "Supplements.2003"
+        },
+        {
+            "name": "Supplements.2004"
+        },
+        {
+            "name": "Supplements.2005"
+        },
+        {
+            "name": "Supplements.2006"
+        },
+        {
+            "name": "Supplements.2007"
+        },
+        {
+            "name": "Supplements.2008"
+        },
+        {
+            "name": "Supplements.2009"
+        },
+        {
+            "name": "Supplements.2010"
+        },
+        {
+            "name": "Supplements.2011"
+        },
+        {
+            "name": "Supplements.2012"
+        },
+        {
+            "name": "Supplements.2013"
+        },
+        {
+            "name": "Supplements.2014"
+        },
+        {
+            "name": "Supplements.2015"
+        },
+        {
+            "name": "Supplements.2016"
+        },
+        {
+            "name": "Supplements.2017"
+        },
+        {
+            "name": "Supplements.2018"
+        },
+        {
+            "name": "Supplements.2019"
+        },
+        {
+            "name": "Supplements.2020"
+        },
+        {
+            "name": "Supplements.2021"
+        },
+        {
+            "name": "Supplements.2022"
+        },
+        {
+            "name": "Supplements.2023"
+        },
+        {
+            "name": "Establishments"
+        },
+        {
+            "name": "EPW.2001"
+        },
+        {
+            "name": "EPW.2002"
+        },
+        {
+            "name": "EPW.2003"
+        },
+        {
+            "name": "EPW.2004"
+        },
+        {
+            "name": "EPW.2005"
+        },
+        {
+            "name": "EPW.2006"
+        },
+        {
+            "name": "EPW.2007"
+        },
+        {
+            "name": "EPW.2008"
+        },
+        {
+            "name": "EPW.2009"
+        },
+        {
+            "name": "EPW.2010"
+        },
+        {
+            "name": "EPW.2011"
+        },
+        {
+            "name": "EPW.2012"
+        },
+        {
+            "name": "EPW.2013"
+        },
+        {
+            "name": "EPW.2014"
+        },
+        {
+            "name": "EPW.2015"
+        },
+        {
+            "name": "EPW.2016"
+        },
+        {
+            "name": "EPW.2017"
+        },
+        {
+            "name": "EPW.2018"
+        },
+        {
+            "name": "EPW.2019"
+        },
+        {
+            "name": "EPW.2020"
+        },
+        {
+            "name": "EPW.2021"
+        },
+        {
+            "name": "EPW.2022"
+        },
+        {
+            "name": "EPW.2023"
+        },
+        {
+            "name": "WPW.2001"
+        },
+        {
+            "name": "WPW.2002"
+        },
+        {
+            "name": "WPW.2003"
+        },
+        {
+            "name": "WPW.2004"
+        },
+        {
+            "name": "WPW.2005"
+        },
+        {
+            "name": "WPW.2006"
+        },
+        {
+            "name": "WPW.2007"
+        },
+        {
+            "name": "WPW.2008"
+        },
+        {
+            "name": "WPW.2009"
+        },
+        {
+            "name": "WPW.2010"
+        },
+        {
+            "name": "WPW.2011"
+        },
+        {
+            "name": "WPW.2012"
+        },
+        {
+            "name": "WPW.2013"
+        },
+        {
+            "name": "WPW.2014"
+        },
+        {
+            "name": "WPW.2015"
+        },
+        {
+            "name": "WPW.2016"
+        },
+        {
+            "name": "WPW.2017"
+        },
+        {
+            "name": "WPW.2018"
+        },
+        {
+            "name": "WPW.2019"
+        },
+        {
+            "name": "WPW.2020"
+        },
+        {
+            "name": "WPW.2021"
+        },
+        {
+            "name": "WPW.2022"
+        },
+        {
+            "name": "WPW.2023"
+        },
+        {
+            "name": "SPW.2001"
+        },
+        {
+            "name": "SPW.2002"
+        },
+        {
+            "name": "SPW.2003"
+        },
+        {
+            "name": "SPW.2004"
+        },
+        {
+            "name": "SPW.2005"
+        },
+        {
+            "name": "SPW.2006"
+        },
+        {
+            "name": "SPW.2007"
+        },
+        {
+            "name": "SPW.2008"
+        },
+        {
+            "name": "SPW.2009"
+        },
+        {
+            "name": "SPW.2010"
+        },
+        {
+            "name": "SPW.2011"
+        },
+        {
+            "name": "SPW.2012"
+        },
+        {
+            "name": "SPW.2013"
+        },
+        {
+            "name": "SPW.2014"
+        },
+        {
+            "name": "SPW.2015"
+        },
+        {
+            "name": "SPW.2016"
+        },
+        {
+            "name": "SPW.2017"
+        },
+        {
+            "name": "SPW.2018"
+        },
+        {
+            "name": "SPW.2019"
+        },
+        {
+            "name": "SPW.2020"
+        },
+        {
+            "name": "SPW.2021"
+        },
+        {
+            "name": "SPW.2022"
+        },
+        {
+            "name": "SPW.2023"
+        },
+        {
+            "name": "Earnings.2001"
+        },
+        {
+            "name": "Earnings.2002"
+        },
+        {
+            "name": "Earnings.2003"
+        },
+        {
+            "name": "Earnings.2004"
+        },
+        {
+            "name": "Earnings.2005"
+        },
+        {
+            "name": "Earnings.2006"
+        },
+        {
+            "name": "Earnings.2007"
+        },
+        {
+            "name": "Earnings.2008"
+        },
+        {
+            "name": "Earnings.2009"
+        },
+        {
+            "name": "Earnings.2010"
+        },
+        {
+            "name": "Earnings.2011"
+        },
+        {
+            "name": "Earnings.2012"
+        },
+        {
+            "name": "Earnings.2013"
+        },
+        {
+            "name": "Earnings.2014"
+        },
+        {
+            "name": "Earnings.2015"
+        },
+        {
+            "name": "Earnings.2016"
+        },
+        {
+            "name": "Earnings.2017"
+        },
+        {
+            "name": "Earnings.2018"
+        },
+        {
+            "name": "Earnings.2019"
+        },
+        {
+            "name": "Earnings.2020"
+        },
+        {
+            "name": "Earnings.2021"
+        },
+        {
+            "name": "Earnings.2022"
+        },
+        {
+            "name": "Earnings.2023"
+        },
+        {
+            "name": "Earnings.BaseYear"
+        },
+        {
+            "name": "Estab.2004"
+        },
+        {
+            "name": "Estab.2005"
+        },
+        {
+            "name": "Estab.2006"
+        },
+        {
+            "name": "Estab.2007"
+        },
+        {
+            "name": "Estab.2008"
+        },
+        {
+            "name": "Estab.2009"
+        },
+        {
+            "name": "Estab.2010"
+        },
+        {
+            "name": "Estab.2011"
+        },
+        {
+            "name": "Estab.2012"
+        },
+        {
+            "name": "Estab.2013"
+        },
+        {
+            "name": "Estab.2014"
+        },
+        {
+            "name": "Estab.2015"
+        },
+        {
+            "name": "Estab.2016"
+        },
+        {
+            "name": "Estab.2017"
+        },
+        {
+            "name": "Estab.2018"
+        },
+        {
+            "name": "Estab.2019"
+        },
+        {
+            "name": "Estab.2020"
+        },
+        {
+            "name": "Estab.2021"
+        },
+        {
+            "name": "Estab.2022"
+        },
+        {
+            "name": "Estab.2023"
+        }
+    ]
+}

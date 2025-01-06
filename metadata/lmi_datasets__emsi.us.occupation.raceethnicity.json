@@ -1,0 +1,135 @@
+{
+    "datasetName": "EMSI.US.Occupation.RaceEthnicity",
+    "versionName": "2024.4",
+    "attributes": {
+        "minYearInclusive": "2001",
+        "name": "Occupation.RaceEthnicity",
+        "type": "dataset",
+        "path": "Occupation.RaceEthnicity",
+        "currentJobsQuarters": "2023Q1,2023Q2,2023Q3,2023Q4",
+        "maxYearInclusive": "2025",
+        "description": "# Description \n\nThis dataset contains job counts by class of worker, area, occupation, race, and ethnicity. The areas available are nation, state, MSA, and county. All historic years are available, and the data is projected out two years beyond the current industry year. 'Current industry year' refers to the latest year for which data is available from QCEW, and is not always equivalent to the current calendar year. ZIP-level figures are not available for occupation-specific race/ethnicity data.\n\nWhen requesting an MSA code as the area constraint in a query, the code must be prepended by MSA (e.g. for MSA code 10540, use 'MSA10540').\n\nNote: The ethnicity category should be thought of as a layer on top of the race category. In other words, each race has a Hispanic/non-Hispanic dimension. For ease of presentation, Emsi's Analyst and Developer tools treat the Hispanic category as an additional race category alongside the other races. To duplicate this methodology and produce figures that match Analyst or Developer, 'Hispanic' should be treated as an additional race category, and only the 'non-Hispanic' portions of the other race categories should be counted. Essentially this methodology removes the Hispanic population from the other race categories and makes it into its own racial category.\n\nSee emsi.us.occ.hires.seps for data regarding hires and separations.\n\n# Use Cases\n\n#### Questions answered by this dataset:\n\n* How many Hispanic workers are there in Nursing in Ohio?\n* What is the ethnicity breakout of welders in Kit Carson County, CO?\n* What is the racial and ethnic breakout of those workers?\n\n# Metrics\n\n* Jobs: number of occupied positions. This is not quite the same as workers because one worker might fill more than one position.\n\n# Filters\n\n* Class of Worker\n* Area (Nation, State, MSA, County)\n* Occupation (5-digit SOC)\n* Race\n* Ethnicity\n* Year\n",
+        "countryCode": "us",
+        "displayName": "US Occupation by Race and Ethnicity",
+        "currentYear": "2023",
+        "releaseDate": "2024-09-28 18:23:06.8122659Z",
+        "datarun": "2024.4",
+        "numAggPaths_AreaID": "2",
+        "levelsStored_AreaID": "[1:[1,2,3],2:[3]]"
+    },
+    "dimensions": [
+        {
+            "name": "ClassOfWorker",
+            "levelsStored": [
+                "2"
+            ]
+        },
+        {
+            "name": "Area",
+            "levelsStored": [
+                "1",
+                "2",
+                "3"
+            ]
+        },
+        {
+            "name": "Occupation",
+            "levelsStored": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+            ]
+        },
+        {
+            "name": "Race",
+            "levelsStored": [
+                "2"
+            ]
+        },
+        {
+            "name": "Ethnicity",
+            "levelsStored": [
+                "2"
+            ]
+        }
+    ],
+    "metrics": [
+        {
+            "name": "Jobs.2001"
+        },
+        {
+            "name": "Jobs.2002"
+        },
+        {
+            "name": "Jobs.2003"
+        },
+        {
+            "name": "Jobs.2004"
+        },
+        {
+            "name": "Jobs.2005"
+        },
+        {
+            "name": "Jobs.2006"
+        },
+        {
+            "name": "Jobs.2007"
+        },
+        {
+            "name": "Jobs.2008"
+        },
+        {
+            "name": "Jobs.2009"
+        },
+        {
+            "name": "Jobs.2010"
+        },
+        {
+            "name": "Jobs.2011"
+        },
+        {
+            "name": "Jobs.2012"
+        },
+        {
+            "name": "Jobs.2013"
+        },
+        {
+            "name": "Jobs.2014"
+        },
+        {
+            "name": "Jobs.2015"
+        },
+        {
+            "name": "Jobs.2016"
+        },
+        {
+            "name": "Jobs.2017"
+        },
+        {
+            "name": "Jobs.2018"
+        },
+        {
+            "name": "Jobs.2019"
+        },
+        {
+            "name": "Jobs.2020"
+        },
+        {
+            "name": "Jobs.2021"
+        },
+        {
+            "name": "Jobs.2022"
+        },
+        {
+            "name": "Jobs.2023"
+        },
+        {
+            "name": "Jobs.2024"
+        },
+        {
+            "name": "Jobs.2025"
+        }
+    ]
+}

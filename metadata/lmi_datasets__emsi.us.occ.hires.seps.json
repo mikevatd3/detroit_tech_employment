@@ -1,0 +1,198 @@
+{
+    "datasetName": "EMSI.US.Occ.Hires.Seps",
+    "versionName": "2024.4",
+    "attributes": {
+        "minYearInclusive": "2001",
+        "name": "Occ.Hires.Seps",
+        "type": "dataset",
+        "path": "Occ.Hires.Seps",
+        "currentJobsQuarters": "2023Q1,2023Q2,2023Q3,2023Q4",
+        "maxYearInclusive": "2025",
+        "description": "# Description\n\nEmsi's occupation hires and separations dataset provides hires and separations for employees by area and occupation. All historic years back to 2001 are available, and the data is projected out two years beyond the current industry year. 'Current industry year' refers to the latest year for which data is available from QCEW, and is not always equivalent to the current calendar year. Data is available at the nation, state, MSA, and county level.\n\nWhen requesting an MSA code as the area constraint in a query, the code must be prepended by MSA (e.g. for MSA code 10540, use 'MSA10540').\n\n# Use Cases\n\n#### Questions answered by this dataset:\n\n* How many cashiers were hired in Sanoma County in 2010?\n* How is the number of airline pilots hired in the nation expected to change in the next two years?\n* How did the number of separations of retail salespersons compare with that of first-line supervisors last year in Texas?\n\n# Metrics\n\n* Hires: The number of hires made in that occupation. For more information, see https://kb.economicmodeling.com/glossary/hires/\n* Separations: The number of separations from that occupation. Like hires, separations come from the Census Bureau's Quarterly Workforce Indicators (QWI) dataset.\n\n# Filters\n\n* Class of Worker (1, 2)\n* Year\n* Area (Nation, State, MSA, County)\n* Occupation (5-digit SOC)\n",
+        "countryCode": "us",
+        "displayName": "US Occupation Hires and Separations by Area and Occupation",
+        "currentYear": "2023",
+        "releaseDate": "2024-09-28 07:29:04.5938632Z",
+        "datarun": "2024.4",
+        "numAggPaths_AreaID": "2",
+        "levelsStored_AreaID": "[1:[1,2,3],2:[3]]"
+    },
+    "dimensions": [
+        {
+            "name": "Area",
+            "levelsStored": [
+                "1",
+                "2",
+                "3"
+            ]
+        },
+        {
+            "name": "Occupation",
+            "levelsStored": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+            ]
+        },
+        {
+            "name": "ClassOfWorker",
+            "levelsStored": [
+                "2"
+            ]
+        }
+    ],
+    "metrics": [
+        {
+            "name": "Hires.2001"
+        },
+        {
+            "name": "Hires.2002"
+        },
+        {
+            "name": "Hires.2003"
+        },
+        {
+            "name": "Hires.2004"
+        },
+        {
+            "name": "Hires.2005"
+        },
+        {
+            "name": "Hires.2006"
+        },
+        {
+            "name": "Hires.2007"
+        },
+        {
+            "name": "Hires.2008"
+        },
+        {
+            "name": "Hires.2009"
+        },
+        {
+            "name": "Hires.2010"
+        },
+        {
+            "name": "Hires.2011"
+        },
+        {
+            "name": "Hires.2012"
+        },
+        {
+            "name": "Hires.2013"
+        },
+        {
+            "name": "Hires.2014"
+        },
+        {
+            "name": "Hires.2015"
+        },
+        {
+            "name": "Hires.2016"
+        },
+        {
+            "name": "Hires.2017"
+        },
+        {
+            "name": "Hires.2018"
+        },
+        {
+            "name": "Hires.2019"
+        },
+        {
+            "name": "Hires.2020"
+        },
+        {
+            "name": "Hires.2021"
+        },
+        {
+            "name": "Hires.2022"
+        },
+        {
+            "name": "Hires.2023"
+        },
+        {
+            "name": "Hires.2024"
+        },
+        {
+            "name": "Hires.2025"
+        },
+        {
+            "name": "Separations.2001"
+        },
+        {
+            "name": "Separations.2002"
+        },
+        {
+            "name": "Separations.2003"
+        },
+        {
+            "name": "Separations.2004"
+        },
+        {
+            "name": "Separations.2005"
+        },
+        {
+            "name": "Separations.2006"
+        },
+        {
+            "name": "Separations.2007"
+        },
+        {
+            "name": "Separations.2008"
+        },
+        {
+            "name": "Separations.2009"
+        },
+        {
+            "name": "Separations.2010"
+        },
+        {
+            "name": "Separations.2011"
+        },
+        {
+            "name": "Separations.2012"
+        },
+        {
+            "name": "Separations.2013"
+        },
+        {
+            "name": "Separations.2014"
+        },
+        {
+            "name": "Separations.2015"
+        },
+        {
+            "name": "Separations.2016"
+        },
+        {
+            "name": "Separations.2017"
+        },
+        {
+            "name": "Separations.2018"
+        },
+        {
+            "name": "Separations.2019"
+        },
+        {
+            "name": "Separations.2020"
+        },
+        {
+            "name": "Separations.2021"
+        },
+        {
+            "name": "Separations.2022"
+        },
+        {
+            "name": "Separations.2023"
+        },
+        {
+            "name": "Separations.2024"
+        },
+        {
+            "name": "Separations.2025"
+        }
+    ]
+}

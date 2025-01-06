@@ -1,0 +1,1246 @@
+{
+    "datasetName": "EMSI.US.Occupation",
+    "versionName": "2024.4",
+    "attributes": {
+        "minYearInclusive": "2001",
+        "name": "Occupation",
+        "type": "dataset",
+        "path": "Occupation",
+        "currentJobsQuarters": "2023Q1,2023Q2,2023Q3,2023Q4",
+        "maxYearInclusive": "2034",
+        "description": "# Description\n\nThis dataset shows (by year, class of worker, occupation, and area) occupation data including job counts by place of work, openings and replacement figures, earnings, and job counts by place of residence. The data is available back to 2001, with the exception of earnings, which is available for historical data from the current occupation year back to 2005. Jobs by place of work, replacements, and openings data are projected 10 years out beyond the current calendar year. Data is available at the nation, state, MSA, county, census tract, and ZIP code levels.\n\nWhen requesting MSA codes or ZIP codes as the area constraint in a query, the code must be prepended by MSA or ZIP, respectively (e.g. for ZIP code 98102, use 'ZIP98102')\n\n# Use Cases\n\n#### Questions answered by this dataset:\n\n* How many pharmacist jobs existed in Florida in 2016? How many are projected to exist in 2026?\n* What are the median earnings for purchasing managers in the ZIP codes or census tracts in the heart of Minneapolis?\n* How many job openings will there be due to replacement needs for marketing managers in the US between now and 2028?\n* Is the number of librarian jobs in Houston growing or declining?\n* Do self-employed web developers in Santa Clara County, CA make more than web developers who are employees of companies?\n* What are the 90th percentile earnings for graphic designers in the Washington DC metropolitan area?\n* How many registered nurses live in the counties that make up Spokane, WA?\n\n# Metrics\n\n* Jobs by place of work: The number of occupied positions in an area. This is not quite the same as workers because one worker might fill more than one position.\n* Earnings.Average: Average hourly earnings for each job.\n* Growth: Growth is the net (non-negative) change for each year, and is calculated at the lowest level and aggregated up. For these reasons, it often differs from job change as calculated by subtracting an earlier year's jobs from a later year's job counts. The growth metric is a component of the openings metric (growth + replacements = openings).\n* Replacements: Replacements is the number of existing jobs that are estimated to have been vacated in the year. Replacements takes into account job openings that are created but that are not due to growth in the occupation.\n* Openings: Openings is the sum of growth and replacement, and it refers to the estimated number of job openings that exist both due to growth in the occupation and replacement needs in the occupation.\n* Jobs by place of residence: The number of people living in an area that hold a job within the occupation in question (not available at the census tract level)\n* Earnings (current occupation year) or HistoricalEarnings (2005 - current occupation year)\n** Percentile10: 10th percentile hourly earnings per worker.\n** Percentile25: 25th percentile hourly earnings per worker.\n** Percentile50: 50th percentile (median) hourly earnings per worker.\n** Percentile75: 75th percentile hourly earnings per worker.\n** Percentile90: 90th percentile hourly earnings per worker.\n** Median.Annual: 50th percentile (median) annual earnings per worker.\n** Percentile10.Annual: 10th percentile annual earnings per worker.\n** Percentile25.Annual: 25th percentile annual earnings per worker.\n** Percentile50.Annual: 50th percentile (median) annual earnings per worker.\n** Percentile75.Annual: 75th percentile annual earnings per worker.\n** Percentile90.Annual: 90th percentile annual earnings per worker.\n\n# Filters\n\n* Class of Worker\n* Area (Nation, State, MSA, County, Census Tract, ZIP code)\n* Occupation (5-digit SOC)\n* Year\n",
+        "countryCode": "us",
+        "displayName": "US Occupation (Nation, State, County, MSA, ZIP, Census Tract)",
+        "earnYear": "2023",
+        "currentYear": "2023",
+        "releaseDate": "2024-09-29 11:09:49.234464Z",
+        "datarun": "2024.4",
+        "earnStartYear": "2005",
+        "numAggPaths_AreaID": "4",
+        "levelsStored_AreaID": "[1:[1,2,3,4],2:[2,3,4],3:[1,2,3,4],4:[2,3,4]]",
+        "levelsStored_OccID": "[1:[1,5]]"
+    },
+    "dimensions": [
+        {
+            "name": "ClassOfWorker",
+            "levelsStored": [
+                "2"
+            ]
+        },
+        {
+            "name": "Area",
+            "levelsStored": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "name": "Occupation",
+            "levelsStored": [
+                "1",
+                "5"
+            ]
+        }
+    ],
+    "metrics": [
+        {
+            "name": "Jobs.2001"
+        },
+        {
+            "name": "Jobs.2002"
+        },
+        {
+            "name": "Jobs.2003"
+        },
+        {
+            "name": "Jobs.2004"
+        },
+        {
+            "name": "Jobs.2005"
+        },
+        {
+            "name": "Jobs.2006"
+        },
+        {
+            "name": "Jobs.2007"
+        },
+        {
+            "name": "Jobs.2008"
+        },
+        {
+            "name": "Jobs.2009"
+        },
+        {
+            "name": "Jobs.2010"
+        },
+        {
+            "name": "Jobs.2011"
+        },
+        {
+            "name": "Jobs.2012"
+        },
+        {
+            "name": "Jobs.2013"
+        },
+        {
+            "name": "Jobs.2014"
+        },
+        {
+            "name": "Jobs.2015"
+        },
+        {
+            "name": "Jobs.2016"
+        },
+        {
+            "name": "Jobs.2017"
+        },
+        {
+            "name": "Jobs.2018"
+        },
+        {
+            "name": "Jobs.2019"
+        },
+        {
+            "name": "Jobs.2020"
+        },
+        {
+            "name": "Jobs.2021"
+        },
+        {
+            "name": "Jobs.2022"
+        },
+        {
+            "name": "Jobs.2023"
+        },
+        {
+            "name": "Jobs.2024"
+        },
+        {
+            "name": "Jobs.2025"
+        },
+        {
+            "name": "Jobs.2026"
+        },
+        {
+            "name": "Jobs.2027"
+        },
+        {
+            "name": "Jobs.2028"
+        },
+        {
+            "name": "Jobs.2029"
+        },
+        {
+            "name": "Jobs.2030"
+        },
+        {
+            "name": "Jobs.2031"
+        },
+        {
+            "name": "Jobs.2032"
+        },
+        {
+            "name": "Jobs.2033"
+        },
+        {
+            "name": "Jobs.2034"
+        },
+        {
+            "name": "Earnings.Average"
+        },
+        {
+            "name": "Earnings.Percentile10"
+        },
+        {
+            "name": "Earnings.Percentile25"
+        },
+        {
+            "name": "Earnings.Percentile50"
+        },
+        {
+            "name": "Earnings.Percentile75"
+        },
+        {
+            "name": "Earnings.Percentile90"
+        },
+        {
+            "name": "Earnings.Median.Annual"
+        },
+        {
+            "name": "Growth.2001"
+        },
+        {
+            "name": "Growth.2002"
+        },
+        {
+            "name": "Growth.2003"
+        },
+        {
+            "name": "Growth.2004"
+        },
+        {
+            "name": "Growth.2005"
+        },
+        {
+            "name": "Growth.2006"
+        },
+        {
+            "name": "Growth.2007"
+        },
+        {
+            "name": "Growth.2008"
+        },
+        {
+            "name": "Growth.2009"
+        },
+        {
+            "name": "Growth.2010"
+        },
+        {
+            "name": "Growth.2011"
+        },
+        {
+            "name": "Growth.2012"
+        },
+        {
+            "name": "Growth.2013"
+        },
+        {
+            "name": "Growth.2014"
+        },
+        {
+            "name": "Growth.2015"
+        },
+        {
+            "name": "Growth.2016"
+        },
+        {
+            "name": "Growth.2017"
+        },
+        {
+            "name": "Growth.2018"
+        },
+        {
+            "name": "Growth.2019"
+        },
+        {
+            "name": "Growth.2020"
+        },
+        {
+            "name": "Growth.2021"
+        },
+        {
+            "name": "Growth.2022"
+        },
+        {
+            "name": "Growth.2023"
+        },
+        {
+            "name": "Growth.2024"
+        },
+        {
+            "name": "Growth.2025"
+        },
+        {
+            "name": "Growth.2026"
+        },
+        {
+            "name": "Growth.2027"
+        },
+        {
+            "name": "Growth.2028"
+        },
+        {
+            "name": "Growth.2029"
+        },
+        {
+            "name": "Growth.2030"
+        },
+        {
+            "name": "Growth.2031"
+        },
+        {
+            "name": "Growth.2032"
+        },
+        {
+            "name": "Growth.2033"
+        },
+        {
+            "name": "Growth.2034"
+        },
+        {
+            "name": "Replacements.2001"
+        },
+        {
+            "name": "Replacements.2002"
+        },
+        {
+            "name": "Replacements.2003"
+        },
+        {
+            "name": "Replacements.2004"
+        },
+        {
+            "name": "Replacements.2005"
+        },
+        {
+            "name": "Replacements.2006"
+        },
+        {
+            "name": "Replacements.2007"
+        },
+        {
+            "name": "Replacements.2008"
+        },
+        {
+            "name": "Replacements.2009"
+        },
+        {
+            "name": "Replacements.2010"
+        },
+        {
+            "name": "Replacements.2011"
+        },
+        {
+            "name": "Replacements.2012"
+        },
+        {
+            "name": "Replacements.2013"
+        },
+        {
+            "name": "Replacements.2014"
+        },
+        {
+            "name": "Replacements.2015"
+        },
+        {
+            "name": "Replacements.2016"
+        },
+        {
+            "name": "Replacements.2017"
+        },
+        {
+            "name": "Replacements.2018"
+        },
+        {
+            "name": "Replacements.2019"
+        },
+        {
+            "name": "Replacements.2020"
+        },
+        {
+            "name": "Replacements.2021"
+        },
+        {
+            "name": "Replacements.2022"
+        },
+        {
+            "name": "Replacements.2023"
+        },
+        {
+            "name": "Replacements.2024"
+        },
+        {
+            "name": "Replacements.2025"
+        },
+        {
+            "name": "Replacements.2026"
+        },
+        {
+            "name": "Replacements.2027"
+        },
+        {
+            "name": "Replacements.2028"
+        },
+        {
+            "name": "Replacements.2029"
+        },
+        {
+            "name": "Replacements.2030"
+        },
+        {
+            "name": "Replacements.2031"
+        },
+        {
+            "name": "Replacements.2032"
+        },
+        {
+            "name": "Replacements.2033"
+        },
+        {
+            "name": "Replacements.2034"
+        },
+        {
+            "name": "Openings.2001"
+        },
+        {
+            "name": "Openings.2002"
+        },
+        {
+            "name": "Openings.2003"
+        },
+        {
+            "name": "Openings.2004"
+        },
+        {
+            "name": "Openings.2005"
+        },
+        {
+            "name": "Openings.2006"
+        },
+        {
+            "name": "Openings.2007"
+        },
+        {
+            "name": "Openings.2008"
+        },
+        {
+            "name": "Openings.2009"
+        },
+        {
+            "name": "Openings.2010"
+        },
+        {
+            "name": "Openings.2011"
+        },
+        {
+            "name": "Openings.2012"
+        },
+        {
+            "name": "Openings.2013"
+        },
+        {
+            "name": "Openings.2014"
+        },
+        {
+            "name": "Openings.2015"
+        },
+        {
+            "name": "Openings.2016"
+        },
+        {
+            "name": "Openings.2017"
+        },
+        {
+            "name": "Openings.2018"
+        },
+        {
+            "name": "Openings.2019"
+        },
+        {
+            "name": "Openings.2020"
+        },
+        {
+            "name": "Openings.2021"
+        },
+        {
+            "name": "Openings.2022"
+        },
+        {
+            "name": "Openings.2023"
+        },
+        {
+            "name": "Openings.2024"
+        },
+        {
+            "name": "Openings.2025"
+        },
+        {
+            "name": "Openings.2026"
+        },
+        {
+            "name": "Openings.2027"
+        },
+        {
+            "name": "Openings.2028"
+        },
+        {
+            "name": "Openings.2029"
+        },
+        {
+            "name": "Openings.2030"
+        },
+        {
+            "name": "Openings.2031"
+        },
+        {
+            "name": "Openings.2032"
+        },
+        {
+            "name": "Openings.2033"
+        },
+        {
+            "name": "Openings.2034"
+        },
+        {
+            "name": "Earnings.Percentile10.Annual"
+        },
+        {
+            "name": "Earnings.Percentile25.Annual"
+        },
+        {
+            "name": "Earnings.Percentile50.Annual"
+        },
+        {
+            "name": "Earnings.Percentile75.Annual"
+        },
+        {
+            "name": "Earnings.Percentile90.Annual"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2005"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2006"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2007"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2008"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2009"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2010"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2011"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2012"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2013"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2014"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2015"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2016"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2017"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2018"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2019"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2020"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2021"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2022"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.2023"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2005"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2006"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2007"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2008"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2009"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2010"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2011"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2012"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2013"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2014"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2015"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2016"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2017"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2018"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2019"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2020"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2021"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2022"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.2023"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2005"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2006"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2007"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2008"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2009"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2010"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2011"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2012"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2013"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2014"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2015"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2016"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2017"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2018"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2019"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2020"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2021"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2022"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.2023"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2005"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2006"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2007"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2008"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2009"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2010"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2011"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2012"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2013"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2014"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2015"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2016"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2017"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2018"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2019"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2020"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2021"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2022"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.2023"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2005"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2006"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2007"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2008"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2009"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2010"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2011"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2012"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2013"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2014"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2015"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2016"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2017"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2018"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2019"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2020"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2021"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2022"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.2023"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2005"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2006"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2007"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2008"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2009"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2010"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2011"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2012"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2013"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2014"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2015"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2016"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2017"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2018"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2019"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2020"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2021"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2022"
+        },
+        {
+            "name": "HistoricalEarnings.Median.Annual.2023"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2005"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2006"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2007"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2008"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2009"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2010"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2011"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2012"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2013"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2014"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2015"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2016"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2017"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2018"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2019"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2020"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2021"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2022"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile10.Annual.2023"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2005"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2006"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2007"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2008"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2009"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2010"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2011"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2012"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2013"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2014"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2015"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2016"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2017"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2018"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2019"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2020"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2021"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2022"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile25.Annual.2023"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2005"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2006"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2007"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2008"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2009"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2010"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2011"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2012"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2013"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2014"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2015"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2016"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2017"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2018"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2019"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2020"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2021"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2022"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile50.Annual.2023"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2005"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2006"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2007"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2008"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2009"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2010"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2011"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2012"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2013"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2014"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2015"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2016"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2017"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2018"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2019"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2020"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2021"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2022"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile75.Annual.2023"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2005"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2006"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2007"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2008"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2009"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2010"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2011"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2012"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2013"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2014"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2015"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2016"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2017"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2018"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2019"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2020"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2021"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2022"
+        },
+        {
+            "name": "HistoricalEarnings.Percentile90.Annual.2023"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2005"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2006"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2007"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2008"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2009"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2010"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2011"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2012"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2013"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2014"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2015"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2016"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2017"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2018"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2019"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2020"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2021"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2022"
+        },
+        {
+            "name": "HistoricalEarnings.Average.2023"
+        },
+        {
+            "name": "ResidenceJobs.2001"
+        },
+        {
+            "name": "ResidenceJobs.2002"
+        },
+        {
+            "name": "ResidenceJobs.2003"
+        },
+        {
+            "name": "ResidenceJobs.2004"
+        },
+        {
+            "name": "ResidenceJobs.2005"
+        },
+        {
+            "name": "ResidenceJobs.2006"
+        },
+        {
+            "name": "ResidenceJobs.2007"
+        },
+        {
+            "name": "ResidenceJobs.2008"
+        },
+        {
+            "name": "ResidenceJobs.2009"
+        },
+        {
+            "name": "ResidenceJobs.2010"
+        },
+        {
+            "name": "ResidenceJobs.2011"
+        },
+        {
+            "name": "ResidenceJobs.2012"
+        },
+        {
+            "name": "ResidenceJobs.2013"
+        },
+        {
+            "name": "ResidenceJobs.2014"
+        },
+        {
+            "name": "ResidenceJobs.2015"
+        },
+        {
+            "name": "ResidenceJobs.2016"
+        },
+        {
+            "name": "ResidenceJobs.2017"
+        },
+        {
+            "name": "ResidenceJobs.2018"
+        },
+        {
+            "name": "ResidenceJobs.2019"
+        },
+        {
+            "name": "ResidenceJobs.2020"
+        },
+        {
+            "name": "ResidenceJobs.2021"
+        },
+        {
+            "name": "ResidenceJobs.2022"
+        },
+        {
+            "name": "ResidenceJobs.2023"
+        }
+    ]
+}

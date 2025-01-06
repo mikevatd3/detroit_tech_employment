@@ -1,0 +1,153 @@
+{
+    "datasetName": "EMSI.US.Staffing",
+    "versionName": "2024.4",
+    "attributes": {
+        "minYearInclusive": "2001",
+        "name": "Staffing",
+        "type": "dataset",
+        "path": "Staffing",
+        "currentJobsQuarters": "2023Q1,2023Q2,2023Q3,2023Q4",
+        "maxYearInclusive": "2034",
+        "description": "# Description\n\nThe staffing dataset shows the occupational composition of an industry. This data can also be used to find all of the industries that employ a given occupation and the percentage of those industries accounted for by that occupation. Data is available at the nation, state, MSA, county, ZIP, and census tract level.\n\nWhen requesting MSA codes or ZIP codes as the area constraint in a query, the code must be prepended by MSA or ZIP, respectively (e.g. for ZIP code 98102, use 'ZIP98102')\n\nHistorical staffing patterns are available back to 2001 and are projected out 10 years beyond the current calendar year.\n\n# Use Cases\n\n#### Questions answered by this dataset:\n\n* What occupations make up the General Medical and Surgical Hospitals industry in Los Angeles?\n* What industries employ the most web developers in the ZIP code area of downtown Seattle?\n* Has the occupational makeup of the Colleges, Universities, and Professional Schools industry changed over time?\n\n# Metrics\n\n* Jobs: The number of jobs in the industry that are accounted for by the occupation.\n\n# Filters\n\n* Class of Worker\n* Area (Nation, State, MSA, County, ZIP, Census Tract)\n* Industry (6-digit NAICS)\n* Occupation (5-digit SOC)\n* Year\n",
+        "countryCode": "us",
+        "displayName": "US Staffing Patterns (Nation, State, MSA, County, ZIP, Census Tract)",
+        "currentYear": "2023",
+        "releaseDate": "2024-09-28 08:35:44.3970853Z",
+        "datarun": "2024.4",
+        "levelsStored_AreaID": "[1:[1,2,3,4],2:[2,3,4],3:[1,2,3,4],4:[2,3,4]]",
+        "numAggPaths_AreaID": "4"
+    },
+    "dimensions": [
+        {
+            "name": "ClassOfWorker",
+            "levelsStored": [
+                "2"
+            ]
+        },
+        {
+            "name": "Industry",
+            "levelsStored": [
+                "6"
+            ]
+        },
+        {
+            "name": "Occupation",
+            "levelsStored": [
+                "5"
+            ]
+        },
+        {
+            "name": "Area",
+            "levelsStored": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        }
+    ],
+    "metrics": [
+        {
+            "name": "Jobs.2001"
+        },
+        {
+            "name": "Jobs.2002"
+        },
+        {
+            "name": "Jobs.2003"
+        },
+        {
+            "name": "Jobs.2004"
+        },
+        {
+            "name": "Jobs.2005"
+        },
+        {
+            "name": "Jobs.2006"
+        },
+        {
+            "name": "Jobs.2007"
+        },
+        {
+            "name": "Jobs.2008"
+        },
+        {
+            "name": "Jobs.2009"
+        },
+        {
+            "name": "Jobs.2010"
+        },
+        {
+            "name": "Jobs.2011"
+        },
+        {
+            "name": "Jobs.2012"
+        },
+        {
+            "name": "Jobs.2013"
+        },
+        {
+            "name": "Jobs.2014"
+        },
+        {
+            "name": "Jobs.2015"
+        },
+        {
+            "name": "Jobs.2016"
+        },
+        {
+            "name": "Jobs.2017"
+        },
+        {
+            "name": "Jobs.2018"
+        },
+        {
+            "name": "Jobs.2019"
+        },
+        {
+            "name": "Jobs.2020"
+        },
+        {
+            "name": "Jobs.2021"
+        },
+        {
+            "name": "Jobs.2022"
+        },
+        {
+            "name": "Jobs.2023"
+        },
+        {
+            "name": "Jobs.2024"
+        },
+        {
+            "name": "Jobs.2025"
+        },
+        {
+            "name": "Jobs.2026"
+        },
+        {
+            "name": "Jobs.2027"
+        },
+        {
+            "name": "Jobs.2028"
+        },
+        {
+            "name": "Jobs.2029"
+        },
+        {
+            "name": "Jobs.2030"
+        },
+        {
+            "name": "Jobs.2031"
+        },
+        {
+            "name": "Jobs.2032"
+        },
+        {
+            "name": "Jobs.2033"
+        },
+        {
+            "name": "Jobs.2034"
+        }
+    ]
+}

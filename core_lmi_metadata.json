@@ -1,0 +1,475 @@
+{
+    "datasets": [
+        {
+            "name": "emsi.us.ind.firm",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.unemployment.ethnicity",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.unemployment.race",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.enrollments.distance",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.staffing",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.occ.firm",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.crime",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "base",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.educationalattainmentzip",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.nioem.raw",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2020.2",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.occupation.educationalattainment",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.demographics",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.minimumwage",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.industry.month",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.enrollments.migration",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.financialaid",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.oes.raw",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2020.2",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.ipeds_disability",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.irs.migration",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.unemployment.industry",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.occupationcdp",
+            "versions": [
+                "2024.2",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.staffing.earn",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.commuting",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.occ.hires.seps",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.laborforce",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.tuition",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.grossregionalproduct",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.industry",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.educationalattainment.age",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.industrycdp",
+            "versions": [
+                "2024.2",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.industry.detailed",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.veterans_affairs",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.unemployment.age",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.industry.raceethnicity",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.irs.foreignmigration",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.unemployment.gender",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.completers.demographics",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.occupation.detailed",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.completers",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.qcew.quarter",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.enrollments.demographics",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.educationalattainment",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.occupation.raceethnicity",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.unemployment.occupation",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.occupation",
+            "versions": [
+                "2024.2",
+                "2023.4",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "name": "emsi.us.demographicscdp",
+            "versions": [
+                "2024.4"
+            ]
+        },
+        {
+            "name": "emsi.us.costoflivingindex",
+            "versions": [
+                "2024.4"
+            ]
+        },
+        {
+            "name": "emsi.us.completers.locations",
+            "versions": [
+                "2024.4"
+            ]
+        },
+        {
+            "name": "emsi.us.occupation.example",
+            "versions": [
+                "example"
+            ]
+        },
+        {
+            "name": "emsi.us.populationmigration",
+            "versions": [
+                "base"
+            ]
+        }
+    ]
+}

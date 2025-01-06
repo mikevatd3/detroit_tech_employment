@@ -1,0 +1,135 @@
+{
+    "datasetName": "EMSI.US.Occupation.Detailed",
+    "versionName": "2024.4",
+    "attributes": {
+        "minYearInclusive": "2001",
+        "name": "Occupation.Detailed",
+        "type": "dataset",
+        "path": "Occupation.Detailed",
+        "currentJobsQuarters": "2023Q1,2023Q2,2023Q3,2023Q4",
+        "maxYearInclusive": "2025",
+        "description": "# Description\n\nThis dataset contains job counts by class of worker, area, occupation, age band, and gender. The areas available are nation, state, MSA, and county. All historic years are available, and the data is projected out two years beyond the current industry year. 'Current industry year' refers to the latest year for which data is available from QCEW, and is not always equivalent to the current calendar year. ZIP-level figures are not available for occupation-specific age and gender data.\n\nWhen requesting an MSA code as the area constraint in a query, the code must be prepended by MSA (e.g. for MSA code 10540, use 'MSA10540').\n\nSee emsi.us.occ.hires.seps for data regarding hires and separations.\n\n# Use Cases\n\n#### Questions answered by this dataset:\n\n* How many female workers are there in computer-related occupations in Ohio?\n* What is the age breakout of welders in Kit Carson County, CO?\n* How many construction managers might be retiring soon in the ZIP codes that make up Denver, CO?\n\n# Metrics\n\n* Jobs: number of occupied positions. This is not quite the same as workers because one worker might fill more than one position.\n\n# Filters\n\n* Class of Worker\n* Area (Nation, State, MSA, County)\n* Occupation (5-digit SOC)\n* Age (8 age bands)\n* Gender\n* Year\n",
+        "countryCode": "us",
+        "displayName": "US Occupation by Age and Gender",
+        "currentYear": "2023",
+        "releaseDate": "2024-09-28 23:40:23.3041418Z",
+        "datarun": "2024.4",
+        "numAggPaths_AreaID": "2",
+        "levelsStored_AreaID": "[1:[1,2,3],2:[3]]"
+    },
+    "dimensions": [
+        {
+            "name": "ClassOfWorker",
+            "levelsStored": [
+                "2"
+            ]
+        },
+        {
+            "name": "Area",
+            "levelsStored": [
+                "1",
+                "2",
+                "3"
+            ]
+        },
+        {
+            "name": "Occupation",
+            "levelsStored": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+            ]
+        },
+        {
+            "name": "AgeGroup",
+            "levelsStored": [
+                "2"
+            ]
+        },
+        {
+            "name": "Gender",
+            "levelsStored": [
+                "2"
+            ]
+        }
+    ],
+    "metrics": [
+        {
+            "name": "Jobs.2001"
+        },
+        {
+            "name": "Jobs.2002"
+        },
+        {
+            "name": "Jobs.2003"
+        },
+        {
+            "name": "Jobs.2004"
+        },
+        {
+            "name": "Jobs.2005"
+        },
+        {
+            "name": "Jobs.2006"
+        },
+        {
+            "name": "Jobs.2007"
+        },
+        {
+            "name": "Jobs.2008"
+        },
+        {
+            "name": "Jobs.2009"
+        },
+        {
+            "name": "Jobs.2010"
+        },
+        {
+            "name": "Jobs.2011"
+        },
+        {
+            "name": "Jobs.2012"
+        },
+        {
+            "name": "Jobs.2013"
+        },
+        {
+            "name": "Jobs.2014"
+        },
+        {
+            "name": "Jobs.2015"
+        },
+        {
+            "name": "Jobs.2016"
+        },
+        {
+            "name": "Jobs.2017"
+        },
+        {
+            "name": "Jobs.2018"
+        },
+        {
+            "name": "Jobs.2019"
+        },
+        {
+            "name": "Jobs.2020"
+        },
+        {
+            "name": "Jobs.2021"
+        },
+        {
+            "name": "Jobs.2022"
+        },
+        {
+            "name": "Jobs.2023"
+        },
+        {
+            "name": "Jobs.2024"
+        },
+        {
+            "name": "Jobs.2025"
+        }
+    ]
+}

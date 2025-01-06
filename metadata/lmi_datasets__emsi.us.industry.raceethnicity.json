@@ -1,0 +1,361 @@
+{
+    "datasetName": "EMSI.US.Industry.RaceEthnicity",
+    "versionName": "2024.4",
+    "attributes": {
+        "minYearInclusive": "2001",
+        "name": "Industry.RaceEthnicity",
+        "type": "dataset",
+        "path": "Industry.RaceEthnicity",
+        "currentJobsQuarters": "2023Q1,2023Q2,2023Q3,2023Q4",
+        "maxYearInclusive": "2025",
+        "description": "# Description\n\nThe race/ethnicity industry dataset provides job counts, hires, separations, and turnover rate by class of worker, area, industry, race, and ethnicity. All historic years back to 2001 are available, and the data is projected out two years beyond the current industry year. 'Current industry year' refers to the latest year for which data is available from QCEW, and is not always equivalent to the current calendar year. Data is available at the nation, state, MSA, and county level.\n\nWhen requesting an MSA code as the area constraint in a query, the code must be prepended by MSA (e.g. for MSA code 10540, use 'MSA10540').\n\nNote: The ethnicity category should be thought of as a layer on top of the race category. In other words, each race has a Hispanic/non-Hispanic dimension. For ease of presentation, Emsi's Analyst and Developer tools treat the Hispanic category as an additional race category alongside the other races. To duplicate this methodology and produce figures that match Analyst or Developer, 'Hispanic' should be treated as an additional race category, and only the 'non-Hispanic' portions of the other race categories should be counted. Essentially this methodology removes the Hispanic population from the other race categories and makes it into its own racial category.\n\n# Use Cases\n\n#### Questions answered by this dataset:\n\n* What is the racial breakdown of the finance industry in New York City?\n* What percentage of workers in the custom computer programming services industry in Phoenix are Hispanic?\n* How has the racial makeup of the workforce in Denver changed over time?\n\n# Metrics\n\n* Jobs: The number of occupied positions. This is not quite the same as workers because one worker might fill more than one position.\n* Hires: The number of hires made in that industry. For more information, see https://kb.economicmodeling.com/glossary/hires/\n* Separations: The number of separations from an industry. Both quits and fires are included in the separations figure. Like hires, separations comes from the Census Bureau's Quarterly Workforce Indicators (QWI) dataset.\n* TurnoverRate: The rate of separations per job.\n\n# Filters\n\n* Class of Worker\n* Area (Nation, State, MSA, County)\n* Industry (2 to 6-digit NAICS)\n* Race\n* Ethnicity\n* Year\n",
+        "countryCode": "us",
+        "displayName": "US Industry by Race and Ethnicity",
+        "currentYear": "2023",
+        "releaseDate": "2024-09-28 06:30:02.1559939Z",
+        "datarun": "2024.4",
+        "numAggPaths_AreaID": "2",
+        "levelsStored_AreaID": "[1:[1,2,3],2:[3]]"
+    },
+    "dimensions": [
+        {
+            "name": "ClassOfWorker",
+            "levelsStored": [
+                "2"
+            ]
+        },
+        {
+            "name": "Area",
+            "levelsStored": [
+                "1",
+                "2",
+                "3"
+            ]
+        },
+        {
+            "name": "Industry",
+            "levelsStored": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ]
+        },
+        {
+            "name": "Race",
+            "levelsStored": [
+                "2"
+            ]
+        },
+        {
+            "name": "Ethnicity",
+            "levelsStored": [
+                "2"
+            ]
+        }
+    ],
+    "metrics": [
+        {
+            "name": "Jobs.2001"
+        },
+        {
+            "name": "Jobs.2002"
+        },
+        {
+            "name": "Jobs.2003"
+        },
+        {
+            "name": "Jobs.2004"
+        },
+        {
+            "name": "Jobs.2005"
+        },
+        {
+            "name": "Jobs.2006"
+        },
+        {
+            "name": "Jobs.2007"
+        },
+        {
+            "name": "Jobs.2008"
+        },
+        {
+            "name": "Jobs.2009"
+        },
+        {
+            "name": "Jobs.2010"
+        },
+        {
+            "name": "Jobs.2011"
+        },
+        {
+            "name": "Jobs.2012"
+        },
+        {
+            "name": "Jobs.2013"
+        },
+        {
+            "name": "Jobs.2014"
+        },
+        {
+            "name": "Jobs.2015"
+        },
+        {
+            "name": "Jobs.2016"
+        },
+        {
+            "name": "Jobs.2017"
+        },
+        {
+            "name": "Jobs.2018"
+        },
+        {
+            "name": "Jobs.2019"
+        },
+        {
+            "name": "Jobs.2020"
+        },
+        {
+            "name": "Jobs.2021"
+        },
+        {
+            "name": "Jobs.2022"
+        },
+        {
+            "name": "Jobs.2023"
+        },
+        {
+            "name": "Jobs.2024"
+        },
+        {
+            "name": "Jobs.2025"
+        },
+        {
+            "name": "Hires.2001"
+        },
+        {
+            "name": "Hires.2002"
+        },
+        {
+            "name": "Hires.2003"
+        },
+        {
+            "name": "Hires.2004"
+        },
+        {
+            "name": "Hires.2005"
+        },
+        {
+            "name": "Hires.2006"
+        },
+        {
+            "name": "Hires.2007"
+        },
+        {
+            "name": "Hires.2008"
+        },
+        {
+            "name": "Hires.2009"
+        },
+        {
+            "name": "Hires.2010"
+        },
+        {
+            "name": "Hires.2011"
+        },
+        {
+            "name": "Hires.2012"
+        },
+        {
+            "name": "Hires.2013"
+        },
+        {
+            "name": "Hires.2014"
+        },
+        {
+            "name": "Hires.2015"
+        },
+        {
+            "name": "Hires.2016"
+        },
+        {
+            "name": "Hires.2017"
+        },
+        {
+            "name": "Hires.2018"
+        },
+        {
+            "name": "Hires.2019"
+        },
+        {
+            "name": "Hires.2020"
+        },
+        {
+            "name": "Hires.2021"
+        },
+        {
+            "name": "Hires.2022"
+        },
+        {
+            "name": "Hires.2023"
+        },
+        {
+            "name": "Hires.2024"
+        },
+        {
+            "name": "Hires.2025"
+        },
+        {
+            "name": "Separations.2001"
+        },
+        {
+            "name": "Separations.2002"
+        },
+        {
+            "name": "Separations.2003"
+        },
+        {
+            "name": "Separations.2004"
+        },
+        {
+            "name": "Separations.2005"
+        },
+        {
+            "name": "Separations.2006"
+        },
+        {
+            "name": "Separations.2007"
+        },
+        {
+            "name": "Separations.2008"
+        },
+        {
+            "name": "Separations.2009"
+        },
+        {
+            "name": "Separations.2010"
+        },
+        {
+            "name": "Separations.2011"
+        },
+        {
+            "name": "Separations.2012"
+        },
+        {
+            "name": "Separations.2013"
+        },
+        {
+            "name": "Separations.2014"
+        },
+        {
+            "name": "Separations.2015"
+        },
+        {
+            "name": "Separations.2016"
+        },
+        {
+            "name": "Separations.2017"
+        },
+        {
+            "name": "Separations.2018"
+        },
+        {
+            "name": "Separations.2019"
+        },
+        {
+            "name": "Separations.2020"
+        },
+        {
+            "name": "Separations.2021"
+        },
+        {
+            "name": "Separations.2022"
+        },
+        {
+            "name": "Separations.2023"
+        },
+        {
+            "name": "Separations.2024"
+        },
+        {
+            "name": "Separations.2025"
+        },
+        {
+            "name": "TurnoverRate.2001"
+        },
+        {
+            "name": "TurnoverRate.2002"
+        },
+        {
+            "name": "TurnoverRate.2003"
+        },
+        {
+            "name": "TurnoverRate.2004"
+        },
+        {
+            "name": "TurnoverRate.2005"
+        },
+        {
+            "name": "TurnoverRate.2006"
+        },
+        {
+            "name": "TurnoverRate.2007"
+        },
+        {
+            "name": "TurnoverRate.2008"
+        },
+        {
+            "name": "TurnoverRate.2009"
+        },
+        {
+            "name": "TurnoverRate.2010"
+        },
+        {
+            "name": "TurnoverRate.2011"
+        },
+        {
+            "name": "TurnoverRate.2012"
+        },
+        {
+            "name": "TurnoverRate.2013"
+        },
+        {
+            "name": "TurnoverRate.2014"
+        },
+        {
+            "name": "TurnoverRate.2015"
+        },
+        {
+            "name": "TurnoverRate.2016"
+        },
+        {
+            "name": "TurnoverRate.2017"
+        },
+        {
+            "name": "TurnoverRate.2018"
+        },
+        {
+            "name": "TurnoverRate.2019"
+        },
+        {
+            "name": "TurnoverRate.2020"
+        },
+        {
+            "name": "TurnoverRate.2021"
+        },
+        {
+            "name": "TurnoverRate.2022"
+        },
+        {
+            "name": "TurnoverRate.2023"
+        },
+        {
+            "name": "TurnoverRate.2024"
+        },
+        {
+            "name": "TurnoverRate.2025"
+        }
+    ]
+}

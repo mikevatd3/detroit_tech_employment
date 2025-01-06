@@ -1,0 +1,3244 @@
+{
+    "datasetName": "EMSI.US.Unemployment.Occupation",
+    "versionName": "2024.4",
+    "attributes": {
+        "minYearInclusive": "2010",
+        "minMonthInclusive": "1",
+        "name": "Unemployment.Occupation",
+        "path": "Unemployment.Occupation",
+        "type": "dataset",
+        "maxMonthInclusive": "10",
+        "maxYearInclusive": "2024",
+        "description": "# Description\n\nThis dataset provides unemployment figures by area and occupation. Data is available by month from January 2010 through the latest month available in the version selected. Data is available at the national, state, MSA, and county levels. Only the total figure and two-digit occupation data are available. Unemployment is provided in both numbers and percentages, and is not seasonally adjusted.\n\nWhen requesting an MSA code as the area constraint in a query, the code must be prepended by MSA (e.g. for MSA code 10540, use 'MSA10540').\n\nThe BLS definitions for many of our metrics can be found at [the BLS unemployment FAQ](https://www.bls.gov/lau/laufaq.htm#Q03).\n\nOur twelve month averages are a less volatile metric to measure employment and unemployment, and are made by averaging the current month of employment/unemployment data with the previous eleven months' data.\n\n# Use Cases\n\n#### Questions answered by this dataset:\n\n* What major occupation group had the highest employment and unemployment in Ohio in January 2018?\n* What state has the most employment and unemployment in healthcare occupations?\n* How has occupation employment and unemployment changed over time in Kansas City?\n* Which occupation in Missouri had the largest growth in employment in May 2021?\n\n# Metrics\n\n* Employment: The number of employed people in the area.\n* Unemployment: The number of unemployed people in the area.\n* TwelveMonthAverage: The average of the last 12 months' unemployment.\n* TwelveMonthEmpAverage: The average of the last 12 months' employment.\n* LaborForce: The number of employed and unemployed people in the area.\n* UnemploymentRate: Unemployment divided by the LaborForce.\n\n# Filters\n\n* Area (Nation, State, MSA, County)\n* Occupation (2-digit SOC)\n* Year\n* Month\n",
+        "countryCode": "us",
+        "displayName": "US Unemployment by Occupation",
+        "currentYear": "2024",
+        "releaseDate": "2024-12-04 15:45:34.8492922Z",
+        "datarun": "2024.4",
+        "numAggPaths_AreaID": "2",
+        "levelsStored_AreaID": "[1:[1,2,3],2:[3]]"
+    },
+    "dimensions": [
+        {
+            "name": "Area",
+            "levelsStored": [
+                "1",
+                "2",
+                "3"
+            ]
+        },
+        {
+            "name": "Occupation",
+            "levelsStored": [
+                "1",
+                "2"
+            ]
+        }
+    ],
+    "metrics": [
+        {
+            "name": "Employment.2010.Jan"
+        },
+        {
+            "name": "Employment.2010.Feb"
+        },
+        {
+            "name": "Employment.2010.Mar"
+        },
+        {
+            "name": "Employment.2010.Apr"
+        },
+        {
+            "name": "Employment.2010.May"
+        },
+        {
+            "name": "Employment.2010.Jun"
+        },
+        {
+            "name": "Employment.2010.Jul"
+        },
+        {
+            "name": "Employment.2010.Aug"
+        },
+        {
+            "name": "Employment.2010.Sep"
+        },
+        {
+            "name": "Employment.2010.Oct"
+        },
+        {
+            "name": "Employment.2010.Nov"
+        },
+        {
+            "name": "Employment.2010.Dec"
+        },
+        {
+            "name": "Employment.2011.Jan"
+        },
+        {
+            "name": "Employment.2011.Feb"
+        },
+        {
+            "name": "Employment.2011.Mar"
+        },
+        {
+            "name": "Employment.2011.Apr"
+        },
+        {
+            "name": "Employment.2011.May"
+        },
+        {
+            "name": "Employment.2011.Jun"
+        },
+        {
+            "name": "Employment.2011.Jul"
+        },
+        {
+            "name": "Employment.2011.Aug"
+        },
+        {
+            "name": "Employment.2011.Sep"
+        },
+        {
+            "name": "Employment.2011.Oct"
+        },
+        {
+            "name": "Employment.2011.Nov"
+        },
+        {
+            "name": "Employment.2011.Dec"
+        },
+        {
+            "name": "Employment.2012.Jan"
+        },
+        {
+            "name": "Employment.2012.Feb"
+        },
+        {
+            "name": "Employment.2012.Mar"
+        },
+        {
+            "name": "Employment.2012.Apr"
+        },
+        {
+            "name": "Employment.2012.May"
+        },
+        {
+            "name": "Employment.2012.Jun"
+        },
+        {
+            "name": "Employment.2012.Jul"
+        },
+        {
+            "name": "Employment.2012.Aug"
+        },
+        {
+            "name": "Employment.2012.Sep"
+        },
+        {
+            "name": "Employment.2012.Oct"
+        },
+        {
+            "name": "Employment.2012.Nov"
+        },
+        {
+            "name": "Employment.2012.Dec"
+        },
+        {
+            "name": "Employment.2013.Jan"
+        },
+        {
+            "name": "Employment.2013.Feb"
+        },
+        {
+            "name": "Employment.2013.Mar"
+        },
+        {
+            "name": "Employment.2013.Apr"
+        },
+        {
+            "name": "Employment.2013.May"
+        },
+        {
+            "name": "Employment.2013.Jun"
+        },
+        {
+            "name": "Employment.2013.Jul"
+        },
+        {
+            "name": "Employment.2013.Aug"
+        },
+        {
+            "name": "Employment.2013.Sep"
+        },
+        {
+            "name": "Employment.2013.Oct"
+        },
+        {
+            "name": "Employment.2013.Nov"
+        },
+        {
+            "name": "Employment.2013.Dec"
+        },
+        {
+            "name": "Employment.2014.Jan"
+        },
+        {
+            "name": "Employment.2014.Feb"
+        },
+        {
+            "name": "Employment.2014.Mar"
+        },
+        {
+            "name": "Employment.2014.Apr"
+        },
+        {
+            "name": "Employment.2014.May"
+        },
+        {
+            "name": "Employment.2014.Jun"
+        },
+        {
+            "name": "Employment.2014.Jul"
+        },
+        {
+            "name": "Employment.2014.Aug"
+        },
+        {
+            "name": "Employment.2014.Sep"
+        },
+        {
+            "name": "Employment.2014.Oct"
+        },
+        {
+            "name": "Employment.2014.Nov"
+        },
+        {
+            "name": "Employment.2014.Dec"
+        },
+        {
+            "name": "Employment.2015.Jan"
+        },
+        {
+            "name": "Employment.2015.Feb"
+        },
+        {
+            "name": "Employment.2015.Mar"
+        },
+        {
+            "name": "Employment.2015.Apr"
+        },
+        {
+            "name": "Employment.2015.May"
+        },
+        {
+            "name": "Employment.2015.Jun"
+        },
+        {
+            "name": "Employment.2015.Jul"
+        },
+        {
+            "name": "Employment.2015.Aug"
+        },
+        {
+            "name": "Employment.2015.Sep"
+        },
+        {
+            "name": "Employment.2015.Oct"
+        },
+        {
+            "name": "Employment.2015.Nov"
+        },
+        {
+            "name": "Employment.2015.Dec"
+        },
+        {
+            "name": "Employment.2016.Jan"
+        },
+        {
+            "name": "Employment.2016.Feb"
+        },
+        {
+            "name": "Employment.2016.Mar"
+        },
+        {
+            "name": "Employment.2016.Apr"
+        },
+        {
+            "name": "Employment.2016.May"
+        },
+        {
+            "name": "Employment.2016.Jun"
+        },
+        {
+            "name": "Employment.2016.Jul"
+        },
+        {
+            "name": "Employment.2016.Aug"
+        },
+        {
+            "name": "Employment.2016.Sep"
+        },
+        {
+            "name": "Employment.2016.Oct"
+        },
+        {
+            "name": "Employment.2016.Nov"
+        },
+        {
+            "name": "Employment.2016.Dec"
+        },
+        {
+            "name": "Employment.2017.Jan"
+        },
+        {
+            "name": "Employment.2017.Feb"
+        },
+        {
+            "name": "Employment.2017.Mar"
+        },
+        {
+            "name": "Employment.2017.Apr"
+        },
+        {
+            "name": "Employment.2017.May"
+        },
+        {
+            "name": "Employment.2017.Jun"
+        },
+        {
+            "name": "Employment.2017.Jul"
+        },
+        {
+            "name": "Employment.2017.Aug"
+        },
+        {
+            "name": "Employment.2017.Sep"
+        },
+        {
+            "name": "Employment.2017.Oct"
+        },
+        {
+            "name": "Employment.2017.Nov"
+        },
+        {
+            "name": "Employment.2017.Dec"
+        },
+        {
+            "name": "Employment.2018.Jan"
+        },
+        {
+            "name": "Employment.2018.Feb"
+        },
+        {
+            "name": "Employment.2018.Mar"
+        },
+        {
+            "name": "Employment.2018.Apr"
+        },
+        {
+            "name": "Employment.2018.May"
+        },
+        {
+            "name": "Employment.2018.Jun"
+        },
+        {
+            "name": "Employment.2018.Jul"
+        },
+        {
+            "name": "Employment.2018.Aug"
+        },
+        {
+            "name": "Employment.2018.Sep"
+        },
+        {
+            "name": "Employment.2018.Oct"
+        },
+        {
+            "name": "Employment.2018.Nov"
+        },
+        {
+            "name": "Employment.2018.Dec"
+        },
+        {
+            "name": "Employment.2019.Jan"
+        },
+        {
+            "name": "Employment.2019.Feb"
+        },
+        {
+            "name": "Employment.2019.Mar"
+        },
+        {
+            "name": "Employment.2019.Apr"
+        },
+        {
+            "name": "Employment.2019.May"
+        },
+        {
+            "name": "Employment.2019.Jun"
+        },
+        {
+            "name": "Employment.2019.Jul"
+        },
+        {
+            "name": "Employment.2019.Aug"
+        },
+        {
+            "name": "Employment.2019.Sep"
+        },
+        {
+            "name": "Employment.2019.Oct"
+        },
+        {
+            "name": "Employment.2019.Nov"
+        },
+        {
+            "name": "Employment.2019.Dec"
+        },
+        {
+            "name": "Employment.2020.Jan"
+        },
+        {
+            "name": "Employment.2020.Feb"
+        },
+        {
+            "name": "Employment.2020.Mar"
+        },
+        {
+            "name": "Employment.2020.Apr"
+        },
+        {
+            "name": "Employment.2020.May"
+        },
+        {
+            "name": "Employment.2020.Jun"
+        },
+        {
+            "name": "Employment.2020.Jul"
+        },
+        {
+            "name": "Employment.2020.Aug"
+        },
+        {
+            "name": "Employment.2020.Sep"
+        },
+        {
+            "name": "Employment.2020.Oct"
+        },
+        {
+            "name": "Employment.2020.Nov"
+        },
+        {
+            "name": "Employment.2020.Dec"
+        },
+        {
+            "name": "Employment.2021.Jan"
+        },
+        {
+            "name": "Employment.2021.Feb"
+        },
+        {
+            "name": "Employment.2021.Mar"
+        },
+        {
+            "name": "Employment.2021.Apr"
+        },
+        {
+            "name": "Employment.2021.May"
+        },
+        {
+            "name": "Employment.2021.Jun"
+        },
+        {
+            "name": "Employment.2021.Jul"
+        },
+        {
+            "name": "Employment.2021.Aug"
+        },
+        {
+            "name": "Employment.2021.Sep"
+        },
+        {
+            "name": "Employment.2021.Oct"
+        },
+        {
+            "name": "Employment.2021.Nov"
+        },
+        {
+            "name": "Employment.2021.Dec"
+        },
+        {
+            "name": "Employment.2022.Jan"
+        },
+        {
+            "name": "Employment.2022.Feb"
+        },
+        {
+            "name": "Employment.2022.Mar"
+        },
+        {
+            "name": "Employment.2022.Apr"
+        },
+        {
+            "name": "Employment.2022.May"
+        },
+        {
+            "name": "Employment.2022.Jun"
+        },
+        {
+            "name": "Employment.2022.Jul"
+        },
+        {
+            "name": "Employment.2022.Aug"
+        },
+        {
+            "name": "Employment.2022.Sep"
+        },
+        {
+            "name": "Employment.2022.Oct"
+        },
+        {
+            "name": "Employment.2022.Nov"
+        },
+        {
+            "name": "Employment.2022.Dec"
+        },
+        {
+            "name": "Employment.2023.Jan"
+        },
+        {
+            "name": "Employment.2023.Feb"
+        },
+        {
+            "name": "Employment.2023.Mar"
+        },
+        {
+            "name": "Employment.2023.Apr"
+        },
+        {
+            "name": "Employment.2023.May"
+        },
+        {
+            "name": "Employment.2023.Jun"
+        },
+        {
+            "name": "Employment.2023.Jul"
+        },
+        {
+            "name": "Employment.2023.Aug"
+        },
+        {
+            "name": "Employment.2023.Sep"
+        },
+        {
+            "name": "Employment.2023.Oct"
+        },
+        {
+            "name": "Employment.2023.Nov"
+        },
+        {
+            "name": "Employment.2023.Dec"
+        },
+        {
+            "name": "Employment.2024.Jan"
+        },
+        {
+            "name": "Employment.2024.Feb"
+        },
+        {
+            "name": "Employment.2024.Mar"
+        },
+        {
+            "name": "Employment.2024.Apr"
+        },
+        {
+            "name": "Employment.2024.May"
+        },
+        {
+            "name": "Employment.2024.Jun"
+        },
+        {
+            "name": "Employment.2024.Jul"
+        },
+        {
+            "name": "Employment.2024.Aug"
+        },
+        {
+            "name": "Employment.2024.Sep"
+        },
+        {
+            "name": "Employment.2024.Oct"
+        },
+        {
+            "name": "Unemployment.2010.Jan"
+        },
+        {
+            "name": "Unemployment.2010.Feb"
+        },
+        {
+            "name": "Unemployment.2010.Mar"
+        },
+        {
+            "name": "Unemployment.2010.Apr"
+        },
+        {
+            "name": "Unemployment.2010.May"
+        },
+        {
+            "name": "Unemployment.2010.Jun"
+        },
+        {
+            "name": "Unemployment.2010.Jul"
+        },
+        {
+            "name": "Unemployment.2010.Aug"
+        },
+        {
+            "name": "Unemployment.2010.Sep"
+        },
+        {
+            "name": "Unemployment.2010.Oct"
+        },
+        {
+            "name": "Unemployment.2010.Nov"
+        },
+        {
+            "name": "Unemployment.2010.Dec"
+        },
+        {
+            "name": "Unemployment.2011.Jan"
+        },
+        {
+            "name": "Unemployment.2011.Feb"
+        },
+        {
+            "name": "Unemployment.2011.Mar"
+        },
+        {
+            "name": "Unemployment.2011.Apr"
+        },
+        {
+            "name": "Unemployment.2011.May"
+        },
+        {
+            "name": "Unemployment.2011.Jun"
+        },
+        {
+            "name": "Unemployment.2011.Jul"
+        },
+        {
+            "name": "Unemployment.2011.Aug"
+        },
+        {
+            "name": "Unemployment.2011.Sep"
+        },
+        {
+            "name": "Unemployment.2011.Oct"
+        },
+        {
+            "name": "Unemployment.2011.Nov"
+        },
+        {
+            "name": "Unemployment.2011.Dec"
+        },
+        {
+            "name": "Unemployment.2012.Jan"
+        },
+        {
+            "name": "Unemployment.2012.Feb"
+        },
+        {
+            "name": "Unemployment.2012.Mar"
+        },
+        {
+            "name": "Unemployment.2012.Apr"
+        },
+        {
+            "name": "Unemployment.2012.May"
+        },
+        {
+            "name": "Unemployment.2012.Jun"
+        },
+        {
+            "name": "Unemployment.2012.Jul"
+        },
+        {
+            "name": "Unemployment.2012.Aug"
+        },
+        {
+            "name": "Unemployment.2012.Sep"
+        },
+        {
+            "name": "Unemployment.2012.Oct"
+        },
+        {
+            "name": "Unemployment.2012.Nov"
+        },
+        {
+            "name": "Unemployment.2012.Dec"
+        },
+        {
+            "name": "Unemployment.2013.Jan"
+        },
+        {
+            "name": "Unemployment.2013.Feb"
+        },
+        {
+            "name": "Unemployment.2013.Mar"
+        },
+        {
+            "name": "Unemployment.2013.Apr"
+        },
+        {
+            "name": "Unemployment.2013.May"
+        },
+        {
+            "name": "Unemployment.2013.Jun"
+        },
+        {
+            "name": "Unemployment.2013.Jul"
+        },
+        {
+            "name": "Unemployment.2013.Aug"
+        },
+        {
+            "name": "Unemployment.2013.Sep"
+        },
+        {
+            "name": "Unemployment.2013.Oct"
+        },
+        {
+            "name": "Unemployment.2013.Nov"
+        },
+        {
+            "name": "Unemployment.2013.Dec"
+        },
+        {
+            "name": "Unemployment.2014.Jan"
+        },
+        {
+            "name": "Unemployment.2014.Feb"
+        },
+        {
+            "name": "Unemployment.2014.Mar"
+        },
+        {
+            "name": "Unemployment.2014.Apr"
+        },
+        {
+            "name": "Unemployment.2014.May"
+        },
+        {
+            "name": "Unemployment.2014.Jun"
+        },
+        {
+            "name": "Unemployment.2014.Jul"
+        },
+        {
+            "name": "Unemployment.2014.Aug"
+        },
+        {
+            "name": "Unemployment.2014.Sep"
+        },
+        {
+            "name": "Unemployment.2014.Oct"
+        },
+        {
+            "name": "Unemployment.2014.Nov"
+        },
+        {
+            "name": "Unemployment.2014.Dec"
+        },
+        {
+            "name": "Unemployment.2015.Jan"
+        },
+        {
+            "name": "Unemployment.2015.Feb"
+        },
+        {
+            "name": "Unemployment.2015.Mar"
+        },
+        {
+            "name": "Unemployment.2015.Apr"
+        },
+        {
+            "name": "Unemployment.2015.May"
+        },
+        {
+            "name": "Unemployment.2015.Jun"
+        },
+        {
+            "name": "Unemployment.2015.Jul"
+        },
+        {
+            "name": "Unemployment.2015.Aug"
+        },
+        {
+            "name": "Unemployment.2015.Sep"
+        },
+        {
+            "name": "Unemployment.2015.Oct"
+        },
+        {
+            "name": "Unemployment.2015.Nov"
+        },
+        {
+            "name": "Unemployment.2015.Dec"
+        },
+        {
+            "name": "Unemployment.2016.Jan"
+        },
+        {
+            "name": "Unemployment.2016.Feb"
+        },
+        {
+            "name": "Unemployment.2016.Mar"
+        },
+        {
+            "name": "Unemployment.2016.Apr"
+        },
+        {
+            "name": "Unemployment.2016.May"
+        },
+        {
+            "name": "Unemployment.2016.Jun"
+        },
+        {
+            "name": "Unemployment.2016.Jul"
+        },
+        {
+            "name": "Unemployment.2016.Aug"
+        },
+        {
+            "name": "Unemployment.2016.Sep"
+        },
+        {
+            "name": "Unemployment.2016.Oct"
+        },
+        {
+            "name": "Unemployment.2016.Nov"
+        },
+        {
+            "name": "Unemployment.2016.Dec"
+        },
+        {
+            "name": "Unemployment.2017.Jan"
+        },
+        {
+            "name": "Unemployment.2017.Feb"
+        },
+        {
+            "name": "Unemployment.2017.Mar"
+        },
+        {
+            "name": "Unemployment.2017.Apr"
+        },
+        {
+            "name": "Unemployment.2017.May"
+        },
+        {
+            "name": "Unemployment.2017.Jun"
+        },
+        {
+            "name": "Unemployment.2017.Jul"
+        },
+        {
+            "name": "Unemployment.2017.Aug"
+        },
+        {
+            "name": "Unemployment.2017.Sep"
+        },
+        {
+            "name": "Unemployment.2017.Oct"
+        },
+        {
+            "name": "Unemployment.2017.Nov"
+        },
+        {
+            "name": "Unemployment.2017.Dec"
+        },
+        {
+            "name": "Unemployment.2018.Jan"
+        },
+        {
+            "name": "Unemployment.2018.Feb"
+        },
+        {
+            "name": "Unemployment.2018.Mar"
+        },
+        {
+            "name": "Unemployment.2018.Apr"
+        },
+        {
+            "name": "Unemployment.2018.May"
+        },
+        {
+            "name": "Unemployment.2018.Jun"
+        },
+        {
+            "name": "Unemployment.2018.Jul"
+        },
+        {
+            "name": "Unemployment.2018.Aug"
+        },
+        {
+            "name": "Unemployment.2018.Sep"
+        },
+        {
+            "name": "Unemployment.2018.Oct"
+        },
+        {
+            "name": "Unemployment.2018.Nov"
+        },
+        {
+            "name": "Unemployment.2018.Dec"
+        },
+        {
+            "name": "Unemployment.2019.Jan"
+        },
+        {
+            "name": "Unemployment.2019.Feb"
+        },
+        {
+            "name": "Unemployment.2019.Mar"
+        },
+        {
+            "name": "Unemployment.2019.Apr"
+        },
+        {
+            "name": "Unemployment.2019.May"
+        },
+        {
+            "name": "Unemployment.2019.Jun"
+        },
+        {
+            "name": "Unemployment.2019.Jul"
+        },
+        {
+            "name": "Unemployment.2019.Aug"
+        },
+        {
+            "name": "Unemployment.2019.Sep"
+        },
+        {
+            "name": "Unemployment.2019.Oct"
+        },
+        {
+            "name": "Unemployment.2019.Nov"
+        },
+        {
+            "name": "Unemployment.2019.Dec"
+        },
+        {
+            "name": "Unemployment.2020.Jan"
+        },
+        {
+            "name": "Unemployment.2020.Feb"
+        },
+        {
+            "name": "Unemployment.2020.Mar"
+        },
+        {
+            "name": "Unemployment.2020.Apr"
+        },
+        {
+            "name": "Unemployment.2020.May"
+        },
+        {
+            "name": "Unemployment.2020.Jun"
+        },
+        {
+            "name": "Unemployment.2020.Jul"
+        },
+        {
+            "name": "Unemployment.2020.Aug"
+        },
+        {
+            "name": "Unemployment.2020.Sep"
+        },
+        {
+            "name": "Unemployment.2020.Oct"
+        },
+        {
+            "name": "Unemployment.2020.Nov"
+        },
+        {
+            "name": "Unemployment.2020.Dec"
+        },
+        {
+            "name": "Unemployment.2021.Jan"
+        },
+        {
+            "name": "Unemployment.2021.Feb"
+        },
+        {
+            "name": "Unemployment.2021.Mar"
+        },
+        {
+            "name": "Unemployment.2021.Apr"
+        },
+        {
+            "name": "Unemployment.2021.May"
+        },
+        {
+            "name": "Unemployment.2021.Jun"
+        },
+        {
+            "name": "Unemployment.2021.Jul"
+        },
+        {
+            "name": "Unemployment.2021.Aug"
+        },
+        {
+            "name": "Unemployment.2021.Sep"
+        },
+        {
+            "name": "Unemployment.2021.Oct"
+        },
+        {
+            "name": "Unemployment.2021.Nov"
+        },
+        {
+            "name": "Unemployment.2021.Dec"
+        },
+        {
+            "name": "Unemployment.2022.Jan"
+        },
+        {
+            "name": "Unemployment.2022.Feb"
+        },
+        {
+            "name": "Unemployment.2022.Mar"
+        },
+        {
+            "name": "Unemployment.2022.Apr"
+        },
+        {
+            "name": "Unemployment.2022.May"
+        },
+        {
+            "name": "Unemployment.2022.Jun"
+        },
+        {
+            "name": "Unemployment.2022.Jul"
+        },
+        {
+            "name": "Unemployment.2022.Aug"
+        },
+        {
+            "name": "Unemployment.2022.Sep"
+        },
+        {
+            "name": "Unemployment.2022.Oct"
+        },
+        {
+            "name": "Unemployment.2022.Nov"
+        },
+        {
+            "name": "Unemployment.2022.Dec"
+        },
+        {
+            "name": "Unemployment.2023.Jan"
+        },
+        {
+            "name": "Unemployment.2023.Feb"
+        },
+        {
+            "name": "Unemployment.2023.Mar"
+        },
+        {
+            "name": "Unemployment.2023.Apr"
+        },
+        {
+            "name": "Unemployment.2023.May"
+        },
+        {
+            "name": "Unemployment.2023.Jun"
+        },
+        {
+            "name": "Unemployment.2023.Jul"
+        },
+        {
+            "name": "Unemployment.2023.Aug"
+        },
+        {
+            "name": "Unemployment.2023.Sep"
+        },
+        {
+            "name": "Unemployment.2023.Oct"
+        },
+        {
+            "name": "Unemployment.2023.Nov"
+        },
+        {
+            "name": "Unemployment.2023.Dec"
+        },
+        {
+            "name": "Unemployment.2024.Jan"
+        },
+        {
+            "name": "Unemployment.2024.Feb"
+        },
+        {
+            "name": "Unemployment.2024.Mar"
+        },
+        {
+            "name": "Unemployment.2024.Apr"
+        },
+        {
+            "name": "Unemployment.2024.May"
+        },
+        {
+            "name": "Unemployment.2024.Jun"
+        },
+        {
+            "name": "Unemployment.2024.Jul"
+        },
+        {
+            "name": "Unemployment.2024.Aug"
+        },
+        {
+            "name": "Unemployment.2024.Sep"
+        },
+        {
+            "name": "Unemployment.2024.Oct"
+        },
+        {
+            "name": "TwelveMonthAverage.2010.Jan"
+        },
+        {
+            "name": "TwelveMonthAverage.2010.Feb"
+        },
+        {
+            "name": "TwelveMonthAverage.2010.Mar"
+        },
+        {
+            "name": "TwelveMonthAverage.2010.Apr"
+        },
+        {
+            "name": "TwelveMonthAverage.2010.May"
+        },
+        {
+            "name": "TwelveMonthAverage.2010.Jun"
+        },
+        {
+            "name": "TwelveMonthAverage.2010.Jul"
+        },
+        {
+            "name": "TwelveMonthAverage.2010.Aug"
+        },
+        {
+            "name": "TwelveMonthAverage.2010.Sep"
+        },
+        {
+            "name": "TwelveMonthAverage.2010.Oct"
+        },
+        {
+            "name": "TwelveMonthAverage.2010.Nov"
+        },
+        {
+            "name": "TwelveMonthAverage.2010.Dec"
+        },
+        {
+            "name": "TwelveMonthAverage.2011.Jan"
+        },
+        {
+            "name": "TwelveMonthAverage.2011.Feb"
+        },
+        {
+            "name": "TwelveMonthAverage.2011.Mar"
+        },
+        {
+            "name": "TwelveMonthAverage.2011.Apr"
+        },
+        {
+            "name": "TwelveMonthAverage.2011.May"
+        },
+        {
+            "name": "TwelveMonthAverage.2011.Jun"
+        },
+        {
+            "name": "TwelveMonthAverage.2011.Jul"
+        },
+        {
+            "name": "TwelveMonthAverage.2011.Aug"
+        },
+        {
+            "name": "TwelveMonthAverage.2011.Sep"
+        },
+        {
+            "name": "TwelveMonthAverage.2011.Oct"
+        },
+        {
+            "name": "TwelveMonthAverage.2011.Nov"
+        },
+        {
+            "name": "TwelveMonthAverage.2011.Dec"
+        },
+        {
+            "name": "TwelveMonthAverage.2012.Jan"
+        },
+        {
+            "name": "TwelveMonthAverage.2012.Feb"
+        },
+        {
+            "name": "TwelveMonthAverage.2012.Mar"
+        },
+        {
+            "name": "TwelveMonthAverage.2012.Apr"
+        },
+        {
+            "name": "TwelveMonthAverage.2012.May"
+        },
+        {
+            "name": "TwelveMonthAverage.2012.Jun"
+        },
+        {
+            "name": "TwelveMonthAverage.2012.Jul"
+        },
+        {
+            "name": "TwelveMonthAverage.2012.Aug"
+        },
+        {
+            "name": "TwelveMonthAverage.2012.Sep"
+        },
+        {
+            "name": "TwelveMonthAverage.2012.Oct"
+        },
+        {
+            "name": "TwelveMonthAverage.2012.Nov"
+        },
+        {
+            "name": "TwelveMonthAverage.2012.Dec"
+        },
+        {
+            "name": "TwelveMonthAverage.2013.Jan"
+        },
+        {
+            "name": "TwelveMonthAverage.2013.Feb"
+        },
+        {
+            "name": "TwelveMonthAverage.2013.Mar"
+        },
+        {
+            "name": "TwelveMonthAverage.2013.Apr"
+        },
+        {
+            "name": "TwelveMonthAverage.2013.May"
+        },
+        {
+            "name": "TwelveMonthAverage.2013.Jun"
+        },
+        {
+            "name": "TwelveMonthAverage.2013.Jul"
+        },
+        {
+            "name": "TwelveMonthAverage.2013.Aug"
+        },
+        {
+            "name": "TwelveMonthAverage.2013.Sep"
+        },
+        {
+            "name": "TwelveMonthAverage.2013.Oct"
+        },
+        {
+            "name": "TwelveMonthAverage.2013.Nov"
+        },
+        {
+            "name": "TwelveMonthAverage.2013.Dec"
+        },
+        {
+            "name": "TwelveMonthAverage.2014.Jan"
+        },
+        {
+            "name": "TwelveMonthAverage.2014.Feb"
+        },
+        {
+            "name": "TwelveMonthAverage.2014.Mar"
+        },
+        {
+            "name": "TwelveMonthAverage.2014.Apr"
+        },
+        {
+            "name": "TwelveMonthAverage.2014.May"
+        },
+        {
+            "name": "TwelveMonthAverage.2014.Jun"
+        },
+        {
+            "name": "TwelveMonthAverage.2014.Jul"
+        },
+        {
+            "name": "TwelveMonthAverage.2014.Aug"
+        },
+        {
+            "name": "TwelveMonthAverage.2014.Sep"
+        },
+        {
+            "name": "TwelveMonthAverage.2014.Oct"
+        },
+        {
+            "name": "TwelveMonthAverage.2014.Nov"
+        },
+        {
+            "name": "TwelveMonthAverage.2014.Dec"
+        },
+        {
+            "name": "TwelveMonthAverage.2015.Jan"
+        },
+        {
+            "name": "TwelveMonthAverage.2015.Feb"
+        },
+        {
+            "name": "TwelveMonthAverage.2015.Mar"
+        },
+        {
+            "name": "TwelveMonthAverage.2015.Apr"
+        },
+        {
+            "name": "TwelveMonthAverage.2015.May"
+        },
+        {
+            "name": "TwelveMonthAverage.2015.Jun"
+        },
+        {
+            "name": "TwelveMonthAverage.2015.Jul"
+        },
+        {
+            "name": "TwelveMonthAverage.2015.Aug"
+        },
+        {
+            "name": "TwelveMonthAverage.2015.Sep"
+        },
+        {
+            "name": "TwelveMonthAverage.2015.Oct"
+        },
+        {
+            "name": "TwelveMonthAverage.2015.Nov"
+        },
+        {
+            "name": "TwelveMonthAverage.2015.Dec"
+        },
+        {
+            "name": "TwelveMonthAverage.2016.Jan"
+        },
+        {
+            "name": "TwelveMonthAverage.2016.Feb"
+        },
+        {
+            "name": "TwelveMonthAverage.2016.Mar"
+        },
+        {
+            "name": "TwelveMonthAverage.2016.Apr"
+        },
+        {
+            "name": "TwelveMonthAverage.2016.May"
+        },
+        {
+            "name": "TwelveMonthAverage.2016.Jun"
+        },
+        {
+            "name": "TwelveMonthAverage.2016.Jul"
+        },
+        {
+            "name": "TwelveMonthAverage.2016.Aug"
+        },
+        {
+            "name": "TwelveMonthAverage.2016.Sep"
+        },
+        {
+            "name": "TwelveMonthAverage.2016.Oct"
+        },
+        {
+            "name": "TwelveMonthAverage.2016.Nov"
+        },
+        {
+            "name": "TwelveMonthAverage.2016.Dec"
+        },
+        {
+            "name": "TwelveMonthAverage.2017.Jan"
+        },
+        {
+            "name": "TwelveMonthAverage.2017.Feb"
+        },
+        {
+            "name": "TwelveMonthAverage.2017.Mar"
+        },
+        {
+            "name": "TwelveMonthAverage.2017.Apr"
+        },
+        {
+            "name": "TwelveMonthAverage.2017.May"
+        },
+        {
+            "name": "TwelveMonthAverage.2017.Jun"
+        },
+        {
+            "name": "TwelveMonthAverage.2017.Jul"
+        },
+        {
+            "name": "TwelveMonthAverage.2017.Aug"
+        },
+        {
+            "name": "TwelveMonthAverage.2017.Sep"
+        },
+        {
+            "name": "TwelveMonthAverage.2017.Oct"
+        },
+        {
+            "name": "TwelveMonthAverage.2017.Nov"
+        },
+        {
+            "name": "TwelveMonthAverage.2017.Dec"
+        },
+        {
+            "name": "TwelveMonthAverage.2018.Jan"
+        },
+        {
+            "name": "TwelveMonthAverage.2018.Feb"
+        },
+        {
+            "name": "TwelveMonthAverage.2018.Mar"
+        },
+        {
+            "name": "TwelveMonthAverage.2018.Apr"
+        },
+        {
+            "name": "TwelveMonthAverage.2018.May"
+        },
+        {
+            "name": "TwelveMonthAverage.2018.Jun"
+        },
+        {
+            "name": "TwelveMonthAverage.2018.Jul"
+        },
+        {
+            "name": "TwelveMonthAverage.2018.Aug"
+        },
+        {
+            "name": "TwelveMonthAverage.2018.Sep"
+        },
+        {
+            "name": "TwelveMonthAverage.2018.Oct"
+        },
+        {
+            "name": "TwelveMonthAverage.2018.Nov"
+        },
+        {
+            "name": "TwelveMonthAverage.2018.Dec"
+        },
+        {
+            "name": "TwelveMonthAverage.2019.Jan"
+        },
+        {
+            "name": "TwelveMonthAverage.2019.Feb"
+        },
+        {
+            "name": "TwelveMonthAverage.2019.Mar"
+        },
+        {
+            "name": "TwelveMonthAverage.2019.Apr"
+        },
+        {
+            "name": "TwelveMonthAverage.2019.May"
+        },
+        {
+            "name": "TwelveMonthAverage.2019.Jun"
+        },
+        {
+            "name": "TwelveMonthAverage.2019.Jul"
+        },
+        {
+            "name": "TwelveMonthAverage.2019.Aug"
+        },
+        {
+            "name": "TwelveMonthAverage.2019.Sep"
+        },
+        {
+            "name": "TwelveMonthAverage.2019.Oct"
+        },
+        {
+            "name": "TwelveMonthAverage.2019.Nov"
+        },
+        {
+            "name": "TwelveMonthAverage.2019.Dec"
+        },
+        {
+            "name": "TwelveMonthAverage.2020.Jan"
+        },
+        {
+            "name": "TwelveMonthAverage.2020.Feb"
+        },
+        {
+            "name": "TwelveMonthAverage.2020.Mar"
+        },
+        {
+            "name": "TwelveMonthAverage.2020.Apr"
+        },
+        {
+            "name": "TwelveMonthAverage.2020.May"
+        },
+        {
+            "name": "TwelveMonthAverage.2020.Jun"
+        },
+        {
+            "name": "TwelveMonthAverage.2020.Jul"
+        },
+        {
+            "name": "TwelveMonthAverage.2020.Aug"
+        },
+        {
+            "name": "TwelveMonthAverage.2020.Sep"
+        },
+        {
+            "name": "TwelveMonthAverage.2020.Oct"
+        },
+        {
+            "name": "TwelveMonthAverage.2020.Nov"
+        },
+        {
+            "name": "TwelveMonthAverage.2020.Dec"
+        },
+        {
+            "name": "TwelveMonthAverage.2021.Jan"
+        },
+        {
+            "name": "TwelveMonthAverage.2021.Feb"
+        },
+        {
+            "name": "TwelveMonthAverage.2021.Mar"
+        },
+        {
+            "name": "TwelveMonthAverage.2021.Apr"
+        },
+        {
+            "name": "TwelveMonthAverage.2021.May"
+        },
+        {
+            "name": "TwelveMonthAverage.2021.Jun"
+        },
+        {
+            "name": "TwelveMonthAverage.2021.Jul"
+        },
+        {
+            "name": "TwelveMonthAverage.2021.Aug"
+        },
+        {
+            "name": "TwelveMonthAverage.2021.Sep"
+        },
+        {
+            "name": "TwelveMonthAverage.2021.Oct"
+        },
+        {
+            "name": "TwelveMonthAverage.2021.Nov"
+        },
+        {
+            "name": "TwelveMonthAverage.2021.Dec"
+        },
+        {
+            "name": "TwelveMonthAverage.2022.Jan"
+        },
+        {
+            "name": "TwelveMonthAverage.2022.Feb"
+        },
+        {
+            "name": "TwelveMonthAverage.2022.Mar"
+        },
+        {
+            "name": "TwelveMonthAverage.2022.Apr"
+        },
+        {
+            "name": "TwelveMonthAverage.2022.May"
+        },
+        {
+            "name": "TwelveMonthAverage.2022.Jun"
+        },
+        {
+            "name": "TwelveMonthAverage.2022.Jul"
+        },
+        {
+            "name": "TwelveMonthAverage.2022.Aug"
+        },
+        {
+            "name": "TwelveMonthAverage.2022.Sep"
+        },
+        {
+            "name": "TwelveMonthAverage.2022.Oct"
+        },
+        {
+            "name": "TwelveMonthAverage.2022.Nov"
+        },
+        {
+            "name": "TwelveMonthAverage.2022.Dec"
+        },
+        {
+            "name": "TwelveMonthAverage.2023.Jan"
+        },
+        {
+            "name": "TwelveMonthAverage.2023.Feb"
+        },
+        {
+            "name": "TwelveMonthAverage.2023.Mar"
+        },
+        {
+            "name": "TwelveMonthAverage.2023.Apr"
+        },
+        {
+            "name": "TwelveMonthAverage.2023.May"
+        },
+        {
+            "name": "TwelveMonthAverage.2023.Jun"
+        },
+        {
+            "name": "TwelveMonthAverage.2023.Jul"
+        },
+        {
+            "name": "TwelveMonthAverage.2023.Aug"
+        },
+        {
+            "name": "TwelveMonthAverage.2023.Sep"
+        },
+        {
+            "name": "TwelveMonthAverage.2023.Oct"
+        },
+        {
+            "name": "TwelveMonthAverage.2023.Nov"
+        },
+        {
+            "name": "TwelveMonthAverage.2023.Dec"
+        },
+        {
+            "name": "TwelveMonthAverage.2024.Jan"
+        },
+        {
+            "name": "TwelveMonthAverage.2024.Feb"
+        },
+        {
+            "name": "TwelveMonthAverage.2024.Mar"
+        },
+        {
+            "name": "TwelveMonthAverage.2024.Apr"
+        },
+        {
+            "name": "TwelveMonthAverage.2024.May"
+        },
+        {
+            "name": "TwelveMonthAverage.2024.Jun"
+        },
+        {
+            "name": "TwelveMonthAverage.2024.Jul"
+        },
+        {
+            "name": "TwelveMonthAverage.2024.Aug"
+        },
+        {
+            "name": "TwelveMonthAverage.2024.Sep"
+        },
+        {
+            "name": "TwelveMonthAverage.2024.Oct"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2010.Jan"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2010.Feb"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2010.Mar"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2010.Apr"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2010.May"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2010.Jun"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2010.Jul"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2010.Aug"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2010.Sep"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2010.Oct"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2010.Nov"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2010.Dec"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2011.Jan"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2011.Feb"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2011.Mar"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2011.Apr"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2011.May"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2011.Jun"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2011.Jul"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2011.Aug"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2011.Sep"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2011.Oct"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2011.Nov"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2011.Dec"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2012.Jan"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2012.Feb"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2012.Mar"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2012.Apr"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2012.May"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2012.Jun"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2012.Jul"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2012.Aug"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2012.Sep"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2012.Oct"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2012.Nov"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2012.Dec"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2013.Jan"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2013.Feb"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2013.Mar"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2013.Apr"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2013.May"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2013.Jun"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2013.Jul"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2013.Aug"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2013.Sep"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2013.Oct"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2013.Nov"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2013.Dec"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2014.Jan"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2014.Feb"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2014.Mar"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2014.Apr"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2014.May"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2014.Jun"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2014.Jul"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2014.Aug"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2014.Sep"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2014.Oct"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2014.Nov"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2014.Dec"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2015.Jan"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2015.Feb"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2015.Mar"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2015.Apr"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2015.May"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2015.Jun"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2015.Jul"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2015.Aug"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2015.Sep"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2015.Oct"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2015.Nov"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2015.Dec"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2016.Jan"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2016.Feb"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2016.Mar"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2016.Apr"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2016.May"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2016.Jun"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2016.Jul"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2016.Aug"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2016.Sep"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2016.Oct"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2016.Nov"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2016.Dec"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2017.Jan"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2017.Feb"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2017.Mar"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2017.Apr"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2017.May"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2017.Jun"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2017.Jul"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2017.Aug"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2017.Sep"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2017.Oct"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2017.Nov"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2017.Dec"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2018.Jan"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2018.Feb"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2018.Mar"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2018.Apr"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2018.May"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2018.Jun"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2018.Jul"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2018.Aug"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2018.Sep"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2018.Oct"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2018.Nov"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2018.Dec"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2019.Jan"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2019.Feb"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2019.Mar"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2019.Apr"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2019.May"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2019.Jun"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2019.Jul"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2019.Aug"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2019.Sep"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2019.Oct"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2019.Nov"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2019.Dec"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2020.Jan"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2020.Feb"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2020.Mar"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2020.Apr"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2020.May"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2020.Jun"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2020.Jul"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2020.Aug"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2020.Sep"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2020.Oct"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2020.Nov"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2020.Dec"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2021.Jan"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2021.Feb"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2021.Mar"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2021.Apr"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2021.May"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2021.Jun"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2021.Jul"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2021.Aug"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2021.Sep"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2021.Oct"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2021.Nov"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2021.Dec"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2022.Jan"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2022.Feb"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2022.Mar"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2022.Apr"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2022.May"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2022.Jun"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2022.Jul"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2022.Aug"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2022.Sep"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2022.Oct"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2022.Nov"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2022.Dec"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2023.Jan"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2023.Feb"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2023.Mar"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2023.Apr"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2023.May"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2023.Jun"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2023.Jul"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2023.Aug"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2023.Sep"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2023.Oct"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2023.Nov"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2023.Dec"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2024.Jan"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2024.Feb"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2024.Mar"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2024.Apr"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2024.May"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2024.Jun"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2024.Jul"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2024.Aug"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2024.Sep"
+        },
+        {
+            "name": "TwelveMonthEmpAverage.2024.Oct"
+        },
+        {
+            "name": "LaborForce.2010.Jan"
+        },
+        {
+            "name": "LaborForce.2010.Feb"
+        },
+        {
+            "name": "LaborForce.2010.Mar"
+        },
+        {
+            "name": "LaborForce.2010.Apr"
+        },
+        {
+            "name": "LaborForce.2010.May"
+        },
+        {
+            "name": "LaborForce.2010.Jun"
+        },
+        {
+            "name": "LaborForce.2010.Jul"
+        },
+        {
+            "name": "LaborForce.2010.Aug"
+        },
+        {
+            "name": "LaborForce.2010.Sep"
+        },
+        {
+            "name": "LaborForce.2010.Oct"
+        },
+        {
+            "name": "LaborForce.2010.Nov"
+        },
+        {
+            "name": "LaborForce.2010.Dec"
+        },
+        {
+            "name": "LaborForce.2011.Jan"
+        },
+        {
+            "name": "LaborForce.2011.Feb"
+        },
+        {
+            "name": "LaborForce.2011.Mar"
+        },
+        {
+            "name": "LaborForce.2011.Apr"
+        },
+        {
+            "name": "LaborForce.2011.May"
+        },
+        {
+            "name": "LaborForce.2011.Jun"
+        },
+        {
+            "name": "LaborForce.2011.Jul"
+        },
+        {
+            "name": "LaborForce.2011.Aug"
+        },
+        {
+            "name": "LaborForce.2011.Sep"
+        },
+        {
+            "name": "LaborForce.2011.Oct"
+        },
+        {
+            "name": "LaborForce.2011.Nov"
+        },
+        {
+            "name": "LaborForce.2011.Dec"
+        },
+        {
+            "name": "LaborForce.2012.Jan"
+        },
+        {
+            "name": "LaborForce.2012.Feb"
+        },
+        {
+            "name": "LaborForce.2012.Mar"
+        },
+        {
+            "name": "LaborForce.2012.Apr"
+        },
+        {
+            "name": "LaborForce.2012.May"
+        },
+        {
+            "name": "LaborForce.2012.Jun"
+        },
+        {
+            "name": "LaborForce.2012.Jul"
+        },
+        {
+            "name": "LaborForce.2012.Aug"
+        },
+        {
+            "name": "LaborForce.2012.Sep"
+        },
+        {
+            "name": "LaborForce.2012.Oct"
+        },
+        {
+            "name": "LaborForce.2012.Nov"
+        },
+        {
+            "name": "LaborForce.2012.Dec"
+        },
+        {
+            "name": "LaborForce.2013.Jan"
+        },
+        {
+            "name": "LaborForce.2013.Feb"
+        },
+        {
+            "name": "LaborForce.2013.Mar"
+        },
+        {
+            "name": "LaborForce.2013.Apr"
+        },
+        {
+            "name": "LaborForce.2013.May"
+        },
+        {
+            "name": "LaborForce.2013.Jun"
+        },
+        {
+            "name": "LaborForce.2013.Jul"
+        },
+        {
+            "name": "LaborForce.2013.Aug"
+        },
+        {
+            "name": "LaborForce.2013.Sep"
+        },
+        {
+            "name": "LaborForce.2013.Oct"
+        },
+        {
+            "name": "LaborForce.2013.Nov"
+        },
+        {
+            "name": "LaborForce.2013.Dec"
+        },
+        {
+            "name": "LaborForce.2014.Jan"
+        },
+        {
+            "name": "LaborForce.2014.Feb"
+        },
+        {
+            "name": "LaborForce.2014.Mar"
+        },
+        {
+            "name": "LaborForce.2014.Apr"
+        },
+        {
+            "name": "LaborForce.2014.May"
+        },
+        {
+            "name": "LaborForce.2014.Jun"
+        },
+        {
+            "name": "LaborForce.2014.Jul"
+        },
+        {
+            "name": "LaborForce.2014.Aug"
+        },
+        {
+            "name": "LaborForce.2014.Sep"
+        },
+        {
+            "name": "LaborForce.2014.Oct"
+        },
+        {
+            "name": "LaborForce.2014.Nov"
+        },
+        {
+            "name": "LaborForce.2014.Dec"
+        },
+        {
+            "name": "LaborForce.2015.Jan"
+        },
+        {
+            "name": "LaborForce.2015.Feb"
+        },
+        {
+            "name": "LaborForce.2015.Mar"
+        },
+        {
+            "name": "LaborForce.2015.Apr"
+        },
+        {
+            "name": "LaborForce.2015.May"
+        },
+        {
+            "name": "LaborForce.2015.Jun"
+        },
+        {
+            "name": "LaborForce.2015.Jul"
+        },
+        {
+            "name": "LaborForce.2015.Aug"
+        },
+        {
+            "name": "LaborForce.2015.Sep"
+        },
+        {
+            "name": "LaborForce.2015.Oct"
+        },
+        {
+            "name": "LaborForce.2015.Nov"
+        },
+        {
+            "name": "LaborForce.2015.Dec"
+        },
+        {
+            "name": "LaborForce.2016.Jan"
+        },
+        {
+            "name": "LaborForce.2016.Feb"
+        },
+        {
+            "name": "LaborForce.2016.Mar"
+        },
+        {
+            "name": "LaborForce.2016.Apr"
+        },
+        {
+            "name": "LaborForce.2016.May"
+        },
+        {
+            "name": "LaborForce.2016.Jun"
+        },
+        {
+            "name": "LaborForce.2016.Jul"
+        },
+        {
+            "name": "LaborForce.2016.Aug"
+        },
+        {
+            "name": "LaborForce.2016.Sep"
+        },
+        {
+            "name": "LaborForce.2016.Oct"
+        },
+        {
+            "name": "LaborForce.2016.Nov"
+        },
+        {
+            "name": "LaborForce.2016.Dec"
+        },
+        {
+            "name": "LaborForce.2017.Jan"
+        },
+        {
+            "name": "LaborForce.2017.Feb"
+        },
+        {
+            "name": "LaborForce.2017.Mar"
+        },
+        {
+            "name": "LaborForce.2017.Apr"
+        },
+        {
+            "name": "LaborForce.2017.May"
+        },
+        {
+            "name": "LaborForce.2017.Jun"
+        },
+        {
+            "name": "LaborForce.2017.Jul"
+        },
+        {
+            "name": "LaborForce.2017.Aug"
+        },
+        {
+            "name": "LaborForce.2017.Sep"
+        },
+        {
+            "name": "LaborForce.2017.Oct"
+        },
+        {
+            "name": "LaborForce.2017.Nov"
+        },
+        {
+            "name": "LaborForce.2017.Dec"
+        },
+        {
+            "name": "LaborForce.2018.Jan"
+        },
+        {
+            "name": "LaborForce.2018.Feb"
+        },
+        {
+            "name": "LaborForce.2018.Mar"
+        },
+        {
+            "name": "LaborForce.2018.Apr"
+        },
+        {
+            "name": "LaborForce.2018.May"
+        },
+        {
+            "name": "LaborForce.2018.Jun"
+        },
+        {
+            "name": "LaborForce.2018.Jul"
+        },
+        {
+            "name": "LaborForce.2018.Aug"
+        },
+        {
+            "name": "LaborForce.2018.Sep"
+        },
+        {
+            "name": "LaborForce.2018.Oct"
+        },
+        {
+            "name": "LaborForce.2018.Nov"
+        },
+        {
+            "name": "LaborForce.2018.Dec"
+        },
+        {
+            "name": "LaborForce.2019.Jan"
+        },
+        {
+            "name": "LaborForce.2019.Feb"
+        },
+        {
+            "name": "LaborForce.2019.Mar"
+        },
+        {
+            "name": "LaborForce.2019.Apr"
+        },
+        {
+            "name": "LaborForce.2019.May"
+        },
+        {
+            "name": "LaborForce.2019.Jun"
+        },
+        {
+            "name": "LaborForce.2019.Jul"
+        },
+        {
+            "name": "LaborForce.2019.Aug"
+        },
+        {
+            "name": "LaborForce.2019.Sep"
+        },
+        {
+            "name": "LaborForce.2019.Oct"
+        },
+        {
+            "name": "LaborForce.2019.Nov"
+        },
+        {
+            "name": "LaborForce.2019.Dec"
+        },
+        {
+            "name": "LaborForce.2020.Jan"
+        },
+        {
+            "name": "LaborForce.2020.Feb"
+        },
+        {
+            "name": "LaborForce.2020.Mar"
+        },
+        {
+            "name": "LaborForce.2020.Apr"
+        },
+        {
+            "name": "LaborForce.2020.May"
+        },
+        {
+            "name": "LaborForce.2020.Jun"
+        },
+        {
+            "name": "LaborForce.2020.Jul"
+        },
+        {
+            "name": "LaborForce.2020.Aug"
+        },
+        {
+            "name": "LaborForce.2020.Sep"
+        },
+        {
+            "name": "LaborForce.2020.Oct"
+        },
+        {
+            "name": "LaborForce.2020.Nov"
+        },
+        {
+            "name": "LaborForce.2020.Dec"
+        },
+        {
+            "name": "LaborForce.2021.Jan"
+        },
+        {
+            "name": "LaborForce.2021.Feb"
+        },
+        {
+            "name": "LaborForce.2021.Mar"
+        },
+        {
+            "name": "LaborForce.2021.Apr"
+        },
+        {
+            "name": "LaborForce.2021.May"
+        },
+        {
+            "name": "LaborForce.2021.Jun"
+        },
+        {
+            "name": "LaborForce.2021.Jul"
+        },
+        {
+            "name": "LaborForce.2021.Aug"
+        },
+        {
+            "name": "LaborForce.2021.Sep"
+        },
+        {
+            "name": "LaborForce.2021.Oct"
+        },
+        {
+            "name": "LaborForce.2021.Nov"
+        },
+        {
+            "name": "LaborForce.2021.Dec"
+        },
+        {
+            "name": "LaborForce.2022.Jan"
+        },
+        {
+            "name": "LaborForce.2022.Feb"
+        },
+        {
+            "name": "LaborForce.2022.Mar"
+        },
+        {
+            "name": "LaborForce.2022.Apr"
+        },
+        {
+            "name": "LaborForce.2022.May"
+        },
+        {
+            "name": "LaborForce.2022.Jun"
+        },
+        {
+            "name": "LaborForce.2022.Jul"
+        },
+        {
+            "name": "LaborForce.2022.Aug"
+        },
+        {
+            "name": "LaborForce.2022.Sep"
+        },
+        {
+            "name": "LaborForce.2022.Oct"
+        },
+        {
+            "name": "LaborForce.2022.Nov"
+        },
+        {
+            "name": "LaborForce.2022.Dec"
+        },
+        {
+            "name": "LaborForce.2023.Jan"
+        },
+        {
+            "name": "LaborForce.2023.Feb"
+        },
+        {
+            "name": "LaborForce.2023.Mar"
+        },
+        {
+            "name": "LaborForce.2023.Apr"
+        },
+        {
+            "name": "LaborForce.2023.May"
+        },
+        {
+            "name": "LaborForce.2023.Jun"
+        },
+        {
+            "name": "LaborForce.2023.Jul"
+        },
+        {
+            "name": "LaborForce.2023.Aug"
+        },
+        {
+            "name": "LaborForce.2023.Sep"
+        },
+        {
+            "name": "LaborForce.2023.Oct"
+        },
+        {
+            "name": "LaborForce.2023.Nov"
+        },
+        {
+            "name": "LaborForce.2023.Dec"
+        },
+        {
+            "name": "LaborForce.2024.Jan"
+        },
+        {
+            "name": "LaborForce.2024.Feb"
+        },
+        {
+            "name": "LaborForce.2024.Mar"
+        },
+        {
+            "name": "LaborForce.2024.Apr"
+        },
+        {
+            "name": "LaborForce.2024.May"
+        },
+        {
+            "name": "LaborForce.2024.Jun"
+        },
+        {
+            "name": "LaborForce.2024.Jul"
+        },
+        {
+            "name": "LaborForce.2024.Aug"
+        },
+        {
+            "name": "LaborForce.2024.Sep"
+        },
+        {
+            "name": "LaborForce.2024.Oct"
+        },
+        {
+            "name": "UnemploymentRate.2010.Jan"
+        },
+        {
+            "name": "UnemploymentRate.2010.Feb"
+        },
+        {
+            "name": "UnemploymentRate.2010.Mar"
+        },
+        {
+            "name": "UnemploymentRate.2010.Apr"
+        },
+        {
+            "name": "UnemploymentRate.2010.May"
+        },
+        {
+            "name": "UnemploymentRate.2010.Jun"
+        },
+        {
+            "name": "UnemploymentRate.2010.Jul"
+        },
+        {
+            "name": "UnemploymentRate.2010.Aug"
+        },
+        {
+            "name": "UnemploymentRate.2010.Sep"
+        },
+        {
+            "name": "UnemploymentRate.2010.Oct"
+        },
+        {
+            "name": "UnemploymentRate.2010.Nov"
+        },
+        {
+            "name": "UnemploymentRate.2010.Dec"
+        },
+        {
+            "name": "UnemploymentRate.2011.Jan"
+        },
+        {
+            "name": "UnemploymentRate.2011.Feb"
+        },
+        {
+            "name": "UnemploymentRate.2011.Mar"
+        },
+        {
+            "name": "UnemploymentRate.2011.Apr"
+        },
+        {
+            "name": "UnemploymentRate.2011.May"
+        },
+        {
+            "name": "UnemploymentRate.2011.Jun"
+        },
+        {
+            "name": "UnemploymentRate.2011.Jul"
+        },
+        {
+            "name": "UnemploymentRate.2011.Aug"
+        },
+        {
+            "name": "UnemploymentRate.2011.Sep"
+        },
+        {
+            "name": "UnemploymentRate.2011.Oct"
+        },
+        {
+            "name": "UnemploymentRate.2011.Nov"
+        },
+        {
+            "name": "UnemploymentRate.2011.Dec"
+        },
+        {
+            "name": "UnemploymentRate.2012.Jan"
+        },
+        {
+            "name": "UnemploymentRate.2012.Feb"
+        },
+        {
+            "name": "UnemploymentRate.2012.Mar"
+        },
+        {
+            "name": "UnemploymentRate.2012.Apr"
+        },
+        {
+            "name": "UnemploymentRate.2012.May"
+        },
+        {
+            "name": "UnemploymentRate.2012.Jun"
+        },
+        {
+            "name": "UnemploymentRate.2012.Jul"
+        },
+        {
+            "name": "UnemploymentRate.2012.Aug"
+        },
+        {
+            "name": "UnemploymentRate.2012.Sep"
+        },
+        {
+            "name": "UnemploymentRate.2012.Oct"
+        },
+        {
+            "name": "UnemploymentRate.2012.Nov"
+        },
+        {
+            "name": "UnemploymentRate.2012.Dec"
+        },
+        {
+            "name": "UnemploymentRate.2013.Jan"
+        },
+        {
+            "name": "UnemploymentRate.2013.Feb"
+        },
+        {
+            "name": "UnemploymentRate.2013.Mar"
+        },
+        {
+            "name": "UnemploymentRate.2013.Apr"
+        },
+        {
+            "name": "UnemploymentRate.2013.May"
+        },
+        {
+            "name": "UnemploymentRate.2013.Jun"
+        },
+        {
+            "name": "UnemploymentRate.2013.Jul"
+        },
+        {
+            "name": "UnemploymentRate.2013.Aug"
+        },
+        {
+            "name": "UnemploymentRate.2013.Sep"
+        },
+        {
+            "name": "UnemploymentRate.2013.Oct"
+        },
+        {
+            "name": "UnemploymentRate.2013.Nov"
+        },
+        {
+            "name": "UnemploymentRate.2013.Dec"
+        },
+        {
+            "name": "UnemploymentRate.2014.Jan"
+        },
+        {
+            "name": "UnemploymentRate.2014.Feb"
+        },
+        {
+            "name": "UnemploymentRate.2014.Mar"
+        },
+        {
+            "name": "UnemploymentRate.2014.Apr"
+        },
+        {
+            "name": "UnemploymentRate.2014.May"
+        },
+        {
+            "name": "UnemploymentRate.2014.Jun"
+        },
+        {
+            "name": "UnemploymentRate.2014.Jul"
+        },
+        {
+            "name": "UnemploymentRate.2014.Aug"
+        },
+        {
+            "name": "UnemploymentRate.2014.Sep"
+        },
+        {
+            "name": "UnemploymentRate.2014.Oct"
+        },
+        {
+            "name": "UnemploymentRate.2014.Nov"
+        },
+        {
+            "name": "UnemploymentRate.2014.Dec"
+        },
+        {
+            "name": "UnemploymentRate.2015.Jan"
+        },
+        {
+            "name": "UnemploymentRate.2015.Feb"
+        },
+        {
+            "name": "UnemploymentRate.2015.Mar"
+        },
+        {
+            "name": "UnemploymentRate.2015.Apr"
+        },
+        {
+            "name": "UnemploymentRate.2015.May"
+        },
+        {
+            "name": "UnemploymentRate.2015.Jun"
+        },
+        {
+            "name": "UnemploymentRate.2015.Jul"
+        },
+        {
+            "name": "UnemploymentRate.2015.Aug"
+        },
+        {
+            "name": "UnemploymentRate.2015.Sep"
+        },
+        {
+            "name": "UnemploymentRate.2015.Oct"
+        },
+        {
+            "name": "UnemploymentRate.2015.Nov"
+        },
+        {
+            "name": "UnemploymentRate.2015.Dec"
+        },
+        {
+            "name": "UnemploymentRate.2016.Jan"
+        },
+        {
+            "name": "UnemploymentRate.2016.Feb"
+        },
+        {
+            "name": "UnemploymentRate.2016.Mar"
+        },
+        {
+            "name": "UnemploymentRate.2016.Apr"
+        },
+        {
+            "name": "UnemploymentRate.2016.May"
+        },
+        {
+            "name": "UnemploymentRate.2016.Jun"
+        },
+        {
+            "name": "UnemploymentRate.2016.Jul"
+        },
+        {
+            "name": "UnemploymentRate.2016.Aug"
+        },
+        {
+            "name": "UnemploymentRate.2016.Sep"
+        },
+        {
+            "name": "UnemploymentRate.2016.Oct"
+        },
+        {
+            "name": "UnemploymentRate.2016.Nov"
+        },
+        {
+            "name": "UnemploymentRate.2016.Dec"
+        },
+        {
+            "name": "UnemploymentRate.2017.Jan"
+        },
+        {
+            "name": "UnemploymentRate.2017.Feb"
+        },
+        {
+            "name": "UnemploymentRate.2017.Mar"
+        },
+        {
+            "name": "UnemploymentRate.2017.Apr"
+        },
+        {
+            "name": "UnemploymentRate.2017.May"
+        },
+        {
+            "name": "UnemploymentRate.2017.Jun"
+        },
+        {
+            "name": "UnemploymentRate.2017.Jul"
+        },
+        {
+            "name": "UnemploymentRate.2017.Aug"
+        },
+        {
+            "name": "UnemploymentRate.2017.Sep"
+        },
+        {
+            "name": "UnemploymentRate.2017.Oct"
+        },
+        {
+            "name": "UnemploymentRate.2017.Nov"
+        },
+        {
+            "name": "UnemploymentRate.2017.Dec"
+        },
+        {
+            "name": "UnemploymentRate.2018.Jan"
+        },
+        {
+            "name": "UnemploymentRate.2018.Feb"
+        },
+        {
+            "name": "UnemploymentRate.2018.Mar"
+        },
+        {
+            "name": "UnemploymentRate.2018.Apr"
+        },
+        {
+            "name": "UnemploymentRate.2018.May"
+        },
+        {
+            "name": "UnemploymentRate.2018.Jun"
+        },
+        {
+            "name": "UnemploymentRate.2018.Jul"
+        },
+        {
+            "name": "UnemploymentRate.2018.Aug"
+        },
+        {
+            "name": "UnemploymentRate.2018.Sep"
+        },
+        {
+            "name": "UnemploymentRate.2018.Oct"
+        },
+        {
+            "name": "UnemploymentRate.2018.Nov"
+        },
+        {
+            "name": "UnemploymentRate.2018.Dec"
+        },
+        {
+            "name": "UnemploymentRate.2019.Jan"
+        },
+        {
+            "name": "UnemploymentRate.2019.Feb"
+        },
+        {
+            "name": "UnemploymentRate.2019.Mar"
+        },
+        {
+            "name": "UnemploymentRate.2019.Apr"
+        },
+        {
+            "name": "UnemploymentRate.2019.May"
+        },
+        {
+            "name": "UnemploymentRate.2019.Jun"
+        },
+        {
+            "name": "UnemploymentRate.2019.Jul"
+        },
+        {
+            "name": "UnemploymentRate.2019.Aug"
+        },
+        {
+            "name": "UnemploymentRate.2019.Sep"
+        },
+        {
+            "name": "UnemploymentRate.2019.Oct"
+        },
+        {
+            "name": "UnemploymentRate.2019.Nov"
+        },
+        {
+            "name": "UnemploymentRate.2019.Dec"
+        },
+        {
+            "name": "UnemploymentRate.2020.Jan"
+        },
+        {
+            "name": "UnemploymentRate.2020.Feb"
+        },
+        {
+            "name": "UnemploymentRate.2020.Mar"
+        },
+        {
+            "name": "UnemploymentRate.2020.Apr"
+        },
+        {
+            "name": "UnemploymentRate.2020.May"
+        },
+        {
+            "name": "UnemploymentRate.2020.Jun"
+        },
+        {
+            "name": "UnemploymentRate.2020.Jul"
+        },
+        {
+            "name": "UnemploymentRate.2020.Aug"
+        },
+        {
+            "name": "UnemploymentRate.2020.Sep"
+        },
+        {
+            "name": "UnemploymentRate.2020.Oct"
+        },
+        {
+            "name": "UnemploymentRate.2020.Nov"
+        },
+        {
+            "name": "UnemploymentRate.2020.Dec"
+        },
+        {
+            "name": "UnemploymentRate.2021.Jan"
+        },
+        {
+            "name": "UnemploymentRate.2021.Feb"
+        },
+        {
+            "name": "UnemploymentRate.2021.Mar"
+        },
+        {
+            "name": "UnemploymentRate.2021.Apr"
+        },
+        {
+            "name": "UnemploymentRate.2021.May"
+        },
+        {
+            "name": "UnemploymentRate.2021.Jun"
+        },
+        {
+            "name": "UnemploymentRate.2021.Jul"
+        },
+        {
+            "name": "UnemploymentRate.2021.Aug"
+        },
+        {
+            "name": "UnemploymentRate.2021.Sep"
+        },
+        {
+            "name": "UnemploymentRate.2021.Oct"
+        },
+        {
+            "name": "UnemploymentRate.2021.Nov"
+        },
+        {
+            "name": "UnemploymentRate.2021.Dec"
+        },
+        {
+            "name": "UnemploymentRate.2022.Jan"
+        },
+        {
+            "name": "UnemploymentRate.2022.Feb"
+        },
+        {
+            "name": "UnemploymentRate.2022.Mar"
+        },
+        {
+            "name": "UnemploymentRate.2022.Apr"
+        },
+        {
+            "name": "UnemploymentRate.2022.May"
+        },
+        {
+            "name": "UnemploymentRate.2022.Jun"
+        },
+        {
+            "name": "UnemploymentRate.2022.Jul"
+        },
+        {
+            "name": "UnemploymentRate.2022.Aug"
+        },
+        {
+            "name": "UnemploymentRate.2022.Sep"
+        },
+        {
+            "name": "UnemploymentRate.2022.Oct"
+        },
+        {
+            "name": "UnemploymentRate.2022.Nov"
+        },
+        {
+            "name": "UnemploymentRate.2022.Dec"
+        },
+        {
+            "name": "UnemploymentRate.2023.Jan"
+        },
+        {
+            "name": "UnemploymentRate.2023.Feb"
+        },
+        {
+            "name": "UnemploymentRate.2023.Mar"
+        },
+        {
+            "name": "UnemploymentRate.2023.Apr"
+        },
+        {
+            "name": "UnemploymentRate.2023.May"
+        },
+        {
+            "name": "UnemploymentRate.2023.Jun"
+        },
+        {
+            "name": "UnemploymentRate.2023.Jul"
+        },
+        {
+            "name": "UnemploymentRate.2023.Aug"
+        },
+        {
+            "name": "UnemploymentRate.2023.Sep"
+        },
+        {
+            "name": "UnemploymentRate.2023.Oct"
+        },
+        {
+            "name": "UnemploymentRate.2023.Nov"
+        },
+        {
+            "name": "UnemploymentRate.2023.Dec"
+        },
+        {
+            "name": "UnemploymentRate.2024.Jan"
+        },
+        {
+            "name": "UnemploymentRate.2024.Feb"
+        },
+        {
+            "name": "UnemploymentRate.2024.Mar"
+        },
+        {
+            "name": "UnemploymentRate.2024.Apr"
+        },
+        {
+            "name": "UnemploymentRate.2024.May"
+        },
+        {
+            "name": "UnemploymentRate.2024.Jun"
+        },
+        {
+            "name": "UnemploymentRate.2024.Jul"
+        },
+        {
+            "name": "UnemploymentRate.2024.Aug"
+        },
+        {
+            "name": "UnemploymentRate.2024.Sep"
+        },
+        {
+            "name": "UnemploymentRate.2024.Oct"
+        }
+    ]
+}

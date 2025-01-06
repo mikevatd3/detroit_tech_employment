@@ -1,0 +1,104 @@
+{
+    "datasets": [
+        {
+            "keep": "MAYBE",
+            "name": "emsi.us.ind.firm",
+            "versions": [
+                "2024.2",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "keep": "YES",
+            "name": "emsi.us.staffing",
+            "versions": [
+                "2024.2",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "keep": "MAYBE",
+            "name": "emsi.us.staffing.earn",
+            "versions": [
+                "2024.2",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "keep": "YES",
+            "name": "emsi.us.occ.hires.seps",
+            "versions": [
+                "2024.2",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "keep": "YES",
+            "name": "emsi.us.industry",
+            "versions": [
+                "2024.2",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "keep": "MAYBE",
+            "name": "emsi.us.industry.raceethnicity",
+            "versions": [
+                "2024.2",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "keep": "YES",
+            "name": "emsi.us.occupation",
+            "versions": [
+                "2024.2",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "keep": "YES",
+            "name": "emsi.us.occupation.detailed",
+            "versions": [
+                "2024.2",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "keep": "MAYBE",
+            "name": "emsi.us.occupation.raceethnicity",
+            "versions": [
+                "2024.2",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        },
+        {
+            "keep": "YES",
+            "name": "emsi.us.unemployment.occupation",
+            "versions": [
+                "2024.2",
+                "2024.4",
+                "2024.1",
+                "2024.3"
+            ]
+        }
+    ]
+}

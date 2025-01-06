@@ -1,0 +1,199 @@
+{
+    "datasetName": "EMSI.US.Ind.Firm",
+    "versionName": "2024.4",
+    "attributes": {
+        "minYearInclusive": "2001",
+        "name": "Ind.Firm",
+        "type": "dataset",
+        "path": "Ind.Firm",
+        "currentJobsQuarters": "2023Q1,2023Q2,2023Q3,2023Q4",
+        "maxYearInclusive": "2025",
+        "description": "# Description\n\nEmsi's industry firm job change dataset provides the number of jobs that firms created or destroyed within a particular area and industry. All historic years back to 2001 are available, and the data is projected out two years beyond the current industry year. 'Current industry year' refers to the latest year for which data is available from QCEW, and is not always equivalent to the current calendar year. Data is available at the nation, state, MSA, and county level.\n\nWhen requesting an MSA code as the area constraint in a query, the code must be prepended by MSA (e.g. for MSA code 10540, use 'MSA10540').\n\n# Use Cases\n\n#### Questions answered by this dataset:\n\n* How many new positions opened up in the manufacturing industries in Sanoma County in 2010?\n* How many jobs in the airline industry have been created and destoyed by firms in the last 5 years?\n\n# Metrics\n\n* CreatedJobs: The number of jobs in that occupation created by firms.\n* DestroyedJobs: The number of jobs in that occupation destroyed by firms.\n\n# Filters\n\n* Class of Worker (1, 2)\n* Year\n* Area (Nation, State, MSA, County)\n* Industry (6-digit NAICS)\n",
+        "countryCode": "us",
+        "displayName": "US Industry Firm Job Change",
+        "currentYear": "2023",
+        "releaseDate": "2024-09-28 03:46:43.1865032Z",
+        "datarun": "2024.4",
+        "numAggPaths_AreaID": "2",
+        "levelsStored_AreaID": "[1:[1,2,3],2:[3]]"
+    },
+    "dimensions": [
+        {
+            "name": "ClassOfWorker",
+            "levelsStored": [
+                "2"
+            ]
+        },
+        {
+            "name": "Area",
+            "levelsStored": [
+                "1",
+                "2",
+                "3"
+            ]
+        },
+        {
+            "name": "Industry",
+            "levelsStored": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ]
+        }
+    ],
+    "metrics": [
+        {
+            "name": "CreatedJobs.2001"
+        },
+        {
+            "name": "CreatedJobs.2002"
+        },
+        {
+            "name": "CreatedJobs.2003"
+        },
+        {
+            "name": "CreatedJobs.2004"
+        },
+        {
+            "name": "CreatedJobs.2005"
+        },
+        {
+            "name": "CreatedJobs.2006"
+        },
+        {
+            "name": "CreatedJobs.2007"
+        },
+        {
+            "name": "CreatedJobs.2008"
+        },
+        {
+            "name": "CreatedJobs.2009"
+        },
+        {
+            "name": "CreatedJobs.2010"
+        },
+        {
+            "name": "CreatedJobs.2011"
+        },
+        {
+            "name": "CreatedJobs.2012"
+        },
+        {
+            "name": "CreatedJobs.2013"
+        },
+        {
+            "name": "CreatedJobs.2014"
+        },
+        {
+            "name": "CreatedJobs.2015"
+        },
+        {
+            "name": "CreatedJobs.2016"
+        },
+        {
+            "name": "CreatedJobs.2017"
+        },
+        {
+            "name": "CreatedJobs.2018"
+        },
+        {
+            "name": "CreatedJobs.2019"
+        },
+        {
+            "name": "CreatedJobs.2020"
+        },
+        {
+            "name": "CreatedJobs.2021"
+        },
+        {
+            "name": "CreatedJobs.2022"
+        },
+        {
+            "name": "CreatedJobs.2023"
+        },
+        {
+            "name": "CreatedJobs.2024"
+        },
+        {
+            "name": "CreatedJobs.2025"
+        },
+        {
+            "name": "DestroyedJobs.2001"
+        },
+        {
+            "name": "DestroyedJobs.2002"
+        },
+        {
+            "name": "DestroyedJobs.2003"
+        },
+        {
+            "name": "DestroyedJobs.2004"
+        },
+        {
+            "name": "DestroyedJobs.2005"
+        },
+        {
+            "name": "DestroyedJobs.2006"
+        },
+        {
+            "name": "DestroyedJobs.2007"
+        },
+        {
+            "name": "DestroyedJobs.2008"
+        },
+        {
+            "name": "DestroyedJobs.2009"
+        },
+        {
+            "name": "DestroyedJobs.2010"
+        },
+        {
+            "name": "DestroyedJobs.2011"
+        },
+        {
+            "name": "DestroyedJobs.2012"
+        },
+        {
+            "name": "DestroyedJobs.2013"
+        },
+        {
+            "name": "DestroyedJobs.2014"
+        },
+        {
+            "name": "DestroyedJobs.2015"
+        },
+        {
+            "name": "DestroyedJobs.2016"
+        },
+        {
+            "name": "DestroyedJobs.2017"
+        },
+        {
+            "name": "DestroyedJobs.2018"
+        },
+        {
+            "name": "DestroyedJobs.2019"
+        },
+        {
+            "name": "DestroyedJobs.2020"
+        },
+        {
+            "name": "DestroyedJobs.2021"
+        },
+        {
+            "name": "DestroyedJobs.2022"
+        },
+        {
+            "name": "DestroyedJobs.2023"
+        },
+        {
+            "name": "DestroyedJobs.2024"
+        },
+        {
+            "name": "DestroyedJobs.2025"
+        }
+    ]
+}
