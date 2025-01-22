@@ -2,6 +2,7 @@ from pathlib import Path
 import json
 import logging
 import logging.config
+import pandas as pd
 from sqlalchemy import create_engine
 import tomli
 
@@ -32,3 +33,6 @@ def setup_logging():
     return logging.getLogger(config["app"]["name"])
 
 
+def convert_to_df(response):
+    fields =  response["data"]
+    return pd.DataFrame({field["name"]: field["rows"] for field in fields})

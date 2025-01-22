@@ -2,3 +2,9 @@ config.toml
 __pycache__
 auth.json
 config.json
+staffing_results_2001_2034.json
+*.jsonl
+*.parquet.gzip
+*.parquet
+*.csv
+env
