@@ -211,7 +211,7 @@ description = "The number of new positions that will need to be filled in the gi
 [tables.positions.editions.2025-01-01]
 edition_date = "2025-01-01"
 notes = "First upload of this dataset"
-raw_path = ""
+raw_path = "V:\\DATA\\Business and employment\\Lightcast\\Positions\\positions_20250121.parquet.gzip"
 start = "2023-01-01" 
 end = "9999-12-31" # Forever
 published = "2024-10-01"
@@ -313,6 +313,10 @@ description = "The importance of the skill to the role."
 [[tables.skills_sought.variables]]
 name = "percentage"
 description = "The percentage of job postings analyzed by lightcast that included the skill"
+
+[[tables.skills_sought.variables]]
+name = "count"
+description = "The count of job openings requiring that skill"
 
 [tables.skills_sought.editions.2025-01-01]
 edition_date = "2025-01-01"

@@ -6776,3 +6776,100 @@
 [DEBUG|connectionpool.py|_make_request|L544] @ 2025-01-17 10:01:14,620: https://emsiservices.com:443 "POST /occupation-benchmark/dimensions/soc HTTP/1.1" 200 3168
 [DEBUG|connectionpool.py|_new_conn|L1049] @ 2025-01-17 10:01:14,620: Starting new HTTPS connection (1): emsiservices.com:443
 [DEBUG|connectionpool.py|_make_request|L544] @ 2025-01-17 10:01:15,158: https://emsiservices.com:443 "POST /occupation-benchmark/dimensions/soc HTTP/1.1" 200 3185
+[INFO|load_all_tables.py|main|L43] @ 2025-01-23 09:57:55,618: Loading skills.
+[INFO|load_all_tables.py|main|L55] @ 2025-01-23 09:57:58,849: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L43] @ 2025-01-23 09:57:59,473: Loading occupation.
+[INFO|load_all_tables.py|main|L55] @ 2025-01-23 09:58:00,403: occupation loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L43] @ 2025-01-23 11:13:14,279: Loading skills.
+[INFO|load_all_tables.py|main|L55] @ 2025-01-23 11:13:16,574: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L43] @ 2025-01-23 11:13:17,210: Loading occupation.
+[INFO|load_all_tables.py|main|L55] @ 2025-01-23 11:13:17,787: occupation loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L47] @ 2025-01-23 11:17:08,051: Loading skills.
+[INFO|load_all_tables.py|main|L59] @ 2025-01-23 11:17:09,287: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L47] @ 2025-01-23 11:17:09,406: Loading occupation.
+[INFO|load_all_tables.py|main|L59] @ 2025-01-23 11:17:09,874: occupation loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L47] @ 2025-01-23 11:17:47,276: Loading skills.
+[INFO|load_all_tables.py|main|L59] @ 2025-01-23 11:17:48,431: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L47] @ 2025-01-23 11:17:48,560: Loading occupation.
+[INFO|load_all_tables.py|main|L59] @ 2025-01-23 11:17:49,023: occupation loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L50] @ 2025-01-23 11:18:49,657: Loading skills.
+[INFO|load_all_tables.py|main|L62] @ 2025-01-23 11:18:50,952: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L50] @ 2025-01-23 11:18:51,068: Loading occupation.
+[INFO|load_all_tables.py|main|L62] @ 2025-01-23 11:18:51,633: occupation loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L50] @ 2025-01-23 11:20:03,507: Loading skills.
+[INFO|load_all_tables.py|main|L62] @ 2025-01-23 11:20:04,896: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L50] @ 2025-01-23 11:20:05,015: Loading occupation.
+[INFO|load_all_tables.py|main|L62] @ 2025-01-23 11:20:05,540: occupation loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:21:05,653: Loading skills.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:21:06,866: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:21:06,983: Loading occupation.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:21:07,580: occupation loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:23:35,548: Loading skills.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:23:36,664: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:23:36,782: Loading occupation.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:23:37,290: occupation loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:24:01,172: Loading skills.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:24:04,088: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:24:04,216: Loading occupation.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:24:04,951: occupation loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:24:16,396: Loading skills.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:24:16,581: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:24:16,702: Loading occupation.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:24:16,800: occupation loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:24:26,733: Loading skills.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:24:26,913: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:24:27,037: Loading occupation.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:24:27,377: occupation loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:24:48,833: Loading skills.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:24:53,440: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:24:53,566: Loading occupation.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:24:54,565: occupation loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:24:54,602: Loading historical_earnings.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:25:13,509: historical_earnings loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:26:12,118: Loading skills.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:26:16,758: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:26:16,867: Loading occupation.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:26:18,247: occupation loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:26:18,275: Loading historical_earnings.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:26:30,540: historical_earnings loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:26:32,339: Loading positions.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:27:49,572: Loading positions.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:28:14,151: positions loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:28:46,053: Loading positions.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:29:13,900: positions loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L52] @ 2025-01-23 11:29:15,561: Loading earnings_distribution.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 11:29:18,627: earnings_distribution loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L56] @ 2025-01-23 11:32:38,734: Loading earnings_distribution.
+[INFO|load_all_tables.py|main|L68] @ 2025-01-23 11:32:41,242: earnings_distribution loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L56] @ 2025-01-23 11:32:57,454: Loading earnings_distribution.
+[INFO|load_all_tables.py|main|L68] @ 2025-01-23 11:33:01,067: earnings_distribution loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L56] @ 2025-01-23 11:34:24,277: Loading earnings_distribution.
+[INFO|load_all_tables.py|main|L68] @ 2025-01-23 11:34:29,186: earnings_distribution loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L56] @ 2025-01-23 11:35:00,829: Loading earnings_distribution.
+[INFO|load_all_tables.py|main|L68] @ 2025-01-23 11:35:06,746: earnings_distribution loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L56] @ 2025-01-23 11:35:07,103: Loading skills_sought.
+[INFO|load_all_tables.py|main|L68] @ 2025-01-23 11:35:07,604: skills_sought loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L60] @ 2025-01-23 11:37:06,333: Loading skills_sought.
+[INFO|load_all_tables.py|main|L72] @ 2025-01-23 11:37:06,767: skills_sought loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L60] @ 2025-01-23 11:37:19,452: Loading skills_sought.
+[INFO|load_all_tables.py|main|L72] @ 2025-01-23 11:37:20,443: skills_sought loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L61] @ 2025-01-23 11:37:55,642: Loading skills_sought.
+[INFO|load_all_tables.py|main|L73] @ 2025-01-23 11:37:56,173: skills_sought loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L61] @ 2025-01-23 11:53:28,011: Loading skills_sought.
+[INFO|load_all_tables.py|main|L73] @ 2025-01-23 11:53:28,671: skills_sought loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L61] @ 2025-01-23 11:54:30,921: Loading skills_sought.
+[INFO|load_all_tables.py|main|L73] @ 2025-01-23 11:54:32,075: skills_sought loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L60] @ 2025-01-23 11:55:20,480: Loading skills_sought.
+[INFO|load_all_tables.py|main|L72] @ 2025-01-23 11:55:22,092: skills_sought loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L60] @ 2025-01-23 11:55:22,244: Loading feeder_occupations.
+[INFO|load_all_tables.py|main|L72] @ 2025-01-23 11:55:22,777: feeder_occupations loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L60] @ 2025-01-23 11:56:00,638: Loading feeder_occupations.
+[INFO|load_all_tables.py|main|L72] @ 2025-01-23 11:56:01,754: feeder_occupations loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L60] @ 2025-01-23 11:56:01,873: Loading experience_level.
+[INFO|load_all_tables.py|main|L72] @ 2025-01-23 11:56:02,005: experience_level loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L60] @ 2025-01-23 11:56:02,005: Loading experience_required.
+[INFO|load_all_tables.py|main|L72] @ 2025-01-23 11:56:02,107: experience_required loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L60] @ 2025-01-23 11:56:02,107: Loading education_level.
+[INFO|load_all_tables.py|main|L72] @ 2025-01-23 11:56:02,192: education_level loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L60] @ 2025-01-23 11:56:02,195: Loading education_required.
+[INFO|load_all_tables.py|main|L72] @ 2025-01-23 11:56:02,321: education_required loaded successfully. Validating.

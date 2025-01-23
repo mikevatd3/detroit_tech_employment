@@ -87,6 +87,15 @@ for obj in objs:
         } for feeder in obj["data"]["feederOccupations"]
     )
 
+
+    significance_map = {
+        "commonSkills": "common", 
+        "definingSkills": "defining", 
+        "distinguishingSkills": "distinguishing", 
+        "salaryBoostingSkills": "salary-boosting",
+    }
+
+
     soc_code = obj["data"]["id"]
     for skill_type in [
         "commonSkills", 
@@ -108,7 +117,8 @@ for obj in objs:
                 "soc": soc_code,
                 "skill_id": skill["id"],
                 "count": skill["count"],
-                "percentage": skill["percentage"]
+                "percentage": skill["percentage"],
+                "significance": significance_map[skill_type]
             }
             for skill in obj["data"].get(skill_type, [])
         ])
@@ -130,15 +140,15 @@ for obj in objs:
         })
 
 
-occupations_df = pd.DataFrame(occupations)
-feeder_occupations_df = pd.DataFrame(feeder_occupations)
-skills_df = pd.DataFrame(skills).drop_duplicates(subset="id")
+# occupations_df = pd.DataFrame(occupations)
+# feeder_occupations_df = pd.DataFrame(feeder_occupations)
+# skills_df = pd.DataFrame(skills).drop_duplicates(subset="id")
 join_df = pd.DataFrame(soc_skill_joins)
 
-skills_df.to_parquet("all_skills_20250116.parquet.gzip", index=False)
-feeder_occupations_df.to_csv("feeder_occupations_20240121.csv", index=False)
-occupations_df.to_parquet("all_occupations_20240120.parquet.gzip", index=False)
+# skills_df.to_parquet("all_skills_20250116.parquet.gzip", index=False)
+# feeder_occupations_df.to_csv("feeder_occupations_20240121.csv", index=False)
+# occupations_df.to_parquet("all_occupations_20240120.parquet.gzip", index=False)
 join_df.to_csv("skills_required_20250116.csv", index=False)
 
-pd.DataFrame(education_level_required).to_csv("education_level_required_20250121.csv", index=False)
-pd.DataFrame(experience_required).to_csv("experience_required_20250121.csv", index=False)
+# pd.DataFrame(education_level_required).to_csv("education_level_required_20250121.csv", index=False)
+# pd.DataFrame(experience_required).to_csv("experience_required_20250121.csv", index=False)

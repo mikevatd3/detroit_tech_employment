@@ -22,23 +22,22 @@ class Occupation(pa.DataFrameModel):
     """
     COMPLETE
     """
-    geoid: str = pa.Field() # All Detroit-Warren-Dearborn for now 
+    geoid: str = pa.Field(coerce=True) # All Detroit-Warren-Dearborn for now 
     code: str = pa.Field(nullable=False, unique=True)
     name: str = pa.Field(nullable=False)
     description: str = pa.Field(nullable=True)
-    risk_score: float = pa.Field()
-    location_quotient: float = pa.Field()
-    mean_experience: float = pa.Field()
-    mean_salary: float = pa.Field()
+    risk_score: float = pa.Field(nullable=True, coerce=True)
+    location_quotient: float = pa.Field(coerce=True)
+    mean_experience: float = pa.Field(nullable=True, coerce=True)
+    mean_salary: float = pa.Field(nullable=True, coerce=True)
     embedding: Series[Any] = pa.Field(nullable=False)
-    start: datetime.date = pa.Field()
-    end: datetime.date = pa.Field(default=datetime.date(year=9999, month=12, day=31))
+    start: Series[datetime.date] = pa.Field(coerce=True)
+    end: Series[datetime.date] = pa.Field()
     # search vector for ts_search
 
     class Config:
         strict = True
-        coerce = True
-        unique=["msa", "code"]
+        unique=["geoid", "code"]
 
 
 class HistoricalEarnings(pa.DataFrameModel):
@@ -47,9 +46,13 @@ class HistoricalEarnings(pa.DataFrameModel):
     """
     code: str = pa.Field()
     geoid: str = pa.Field()
-    year: datetime.date = pa.Field()
-    average_hourly: float = pa.Field()
-    median_annual: float = pa.Field()
+    year: datetime.date = pa.Field(coerce=True)
+    average_hourly: float = pa.Field(coerce=True)
+    median_annual: float = pa.Field(coerce=True)
+
+    class Config:
+        strict=True
+        unique=["code", "geoid", "year"]
 
 
 class Positions(pa.DataFrameModel):
@@ -58,12 +61,16 @@ class Positions(pa.DataFrameModel):
     """
     code: str = pa.Field()
     geoid: str = pa.Field()
-    year: datetime.date = pa.Field()
+    year: datetime.date = pa.Field(coerce=True)
     jobs: float = pa.Field()
     residence_jobs: float = pa.Field()
     openings: float = pa.Field()
     replacements: float = pa.Field()
     growth: float = pa.Field()
+
+    class Config:
+        strict=True
+        unique=["code", "geoid", "year"]
 
 
 class EarningsDistribution(pa.DataFrameModel):
@@ -72,19 +79,18 @@ class EarningsDistribution(pa.DataFrameModel):
     """
     code: str = pa.Field()
     geoid: str = pa.Field()
-    hourly_10th_pctl: float = pa.Field(nullable=True)
-    hourly_25th_pctl: float = pa.Field(nullable=True)
-    hourly_50th_pctl: float = pa.Field(nullable=True)
-    hourly_75th_pctl: float = pa.Field(nullable=True)
-    hourly_90th_pctl: float = pa.Field(nullable=True)
-    hourly_mean: float = pa.Field()
-    median_annual: float = pa.Field()
-    start: datetime.date = pa.Field()
-    end: datetime.date = pa.Field(default=datetime.date(year=9999, month=12, day=31))
+    hourly_10th_pctl: float = pa.Field(nullable=True, coerce=True)
+    hourly_25th_pctl: float = pa.Field(nullable=True, coerce=True)
+    hourly_50th_pctl: float = pa.Field(nullable=True, coerce=True)
+    hourly_75th_pctl: float = pa.Field(nullable=True, coerce=True)
+    hourly_90th_pctl: float = pa.Field(nullable=True, coerce=True)
+    hourly_mean: float = pa.Field(coerce=True)
+    median_annual: float = pa.Field(coerce=True)
+    start: datetime.date = pa.Field(coerce=True)
+    end: datetime.date = pa.Field()
 
     class Config:
         strict = True
-        coerce = True
         unique=["code", "geoid"]
 
 
@@ -96,16 +102,15 @@ class SkillsSought(pa.DataFrameModel):
     skill_id: str = pa.Field(nullable=False)
     significance: str = pa.Field(
         nullable=False, 
-        # checks=pa.Check.isin(
-        #    {"common", "defining", "distinguishing", "salary-boosting"}
-        # )
+        isin={"common", "defining", "distinguishing", "salary-boosting"}
+        
     )
     percentage: float = pa.Field(nullable=False)
+    count: float = pa.Field(coerce=True)
 
     class Config:
         strict = True
-        coerce = True
-        unique=["skill_id", "occ_code", "relationship"]
+        unique=["skill_id", "occ_code", "significance"]
 
 
 class FeederOccupations(pa.DataFrameModel):
@@ -115,7 +120,7 @@ class FeederOccupations(pa.DataFrameModel):
     """
     current: str = pa.Field(nullable=False) # Lightcast SOC Code
     next_step: str = pa.Field(nullable=False) # Lightcast SOC Code
-    mean_salary_diff: float = pa.Field()
+    mean_salary_diff: int = pa.Field()
     category: str = pa.Field()
     score: float = pa.Field() # Some kind of likelihood thing?
 
