@@ -34,10 +34,10 @@ def skills_sought_cleanup(df):
 
 
 tablename_and_schema = (
-    ("skills", s.Skills, skills_cleanup),
-    ("occupation", s.Occupation, occupation_cleanup),
-    ("historical_earnings", s.HistoricalEarnings, lambda x: x),
-    ("positions", s.Positions, lambda x: x),
+    # ("skills", s.Skills, skills_cleanup),
+    # ("occupation", s.Occupation, occupation_cleanup),
+    # ("historical_earnings", s.HistoricalEarnings, lambda x: x),
+    # ("positions", s.Positions, lambda x: x),
     ("earnings_distribution", s.EarningsDistribution, earnings_distribution_cleanup),
     ("skills_sought", s.SkillsSought, skills_sought_cleanup),
     ("feeder_occupations", s.FeederOccupations, lambda x: x),

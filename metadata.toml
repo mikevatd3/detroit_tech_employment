@@ -225,6 +225,7 @@ acquired = "2025-01-15"
 
 
 [tables.earnings_distribution]
+name = "earnings_distribution"
 description = "The distribution of earnings for the occupation (most recent - 2023)"
 unit_of_analysis = "Occupation"
 universe = "799 Lightcast-specific occupations"
