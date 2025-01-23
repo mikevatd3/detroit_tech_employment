@@ -3,7 +3,6 @@
 name = "detroit_tech_employment"
 description = "Lightcast data regarding tech-enabled employment in Detroit."
 
-
 [tables.skills]
 description = "Professional skills as defined by Lightcast"
 unit_of_analysis = "Professional Skill"
@@ -16,7 +15,6 @@ source_url = "https://docs.lightcast.dev/apis/skills"
 # notes = "Leave commented if not using"
 # use_conditions = "Leave commented if not using"
 # cadence = "Leave commented if not using"
-
 
 [[tables.skills.variables]]
 name = "id"
@@ -37,7 +35,7 @@ description = "The word vector created with Spacy en-core-web-lg model."
 [tables.skills.editions.2025-01-01]
 edition_date = "2025-01-01"
 notes = "First upload of this dataset"
-raw_path = ""
+raw_path = "V:\\DATA\\Business and employment\\Lightcast\\Skills\\all_skills_20250116.parquet.gzip"
 start = "2023-01-01" 
 end = "9999-12-31" # Forever
 published = "2024-10-01" # Q4 ?
@@ -110,7 +108,7 @@ description = "Set to forever (9999-12-31) for the active rows for the given occ
 [tables.occupation.editions.2025-01-01]
 edition_date = "2025-01-01"
 notes = "First upload of this dataset"
-raw_path = ""
+raw_path = "V:\\DATA\\Business and employment\\Lightcast\\Occupations\\all_occupations_20240120.parquet.gzip"
 start = "2025-01-01" 
 end = "9999-12-31" # Forever
 published = "2024-10-01"
@@ -153,13 +151,12 @@ description = "The average hourly rate for the occupation for the year and geoid
 name = "median_annual"
 description = "The median annual earnings for the occupation for the year and geoid"
 
-
 [tables.historical_earnings.editions.2025-01-01]
 edition_date = "2025-01-01"
 notes = "First upload of this dataset"
-raw_path = ""
-start = "<start date>" 
-end = "9999-12-31" # Forever
+raw_path = "V:\\DATA\\Business and employment\\Lightcast\\Earnings\\historical_earnings_20250121.parquet.gzip"
+start = "2015-01-01" 
+end = "9999-12-31" # Forever, each row has a date available
 published = "2024-10-01"
 acquired = "2024-10-20" 
 
@@ -179,16 +176,13 @@ source_url = "https://kb.lightcast.io/en/articles/7934024-lightcast-occupations"
 # use_conditions = "Leave commented if not using"
 # cadence = "Leave commented if not using"
 
-
 [[tables.positions.variables]]
 name = "code"
 description = "The (Lightcast adjusted) SOC code for the occupation."
 
-
 [[tables.positions.variables]]
 name = "geoid"
 description = "The geoid for the geography of the estimate"
-
 
 [[tables.positions.variables]]
 name = "year"
@@ -249,13 +243,9 @@ description = "The location related to the earnings distribution (msa only curre
 name = "hourly_10th_pctl"
 description = "The 10th percentile hourly earnings for this occupation"
 
-
 [[tables.earnings_distribution.variables]]
 name = "hourly_25th_pctl"
 description = "The 25th percentile hourly earnings for this occupation"
-# suppression_threshold = "Leave commented if not using."
-# standard = "Leave commented if not using."
-
 
 [[tables.earnings_distribution.variables]]
 name = "hourly_50th_pctl"
@@ -288,7 +278,7 @@ description = "The valid to date for the distribution."
 [tables.earnings_distribution.editions.2025-01-01]
 edition_date = "2025-01-01"
 notes = "First upload of this dataset"
-raw_path = ""
+raw_path = "V:\\DATA\\Business and employment\\Lightcast\\Earnings\\earnings_distribution_20250121.parquet.gzip"
 start = "2023-01-01" 
 end = "9999-12-31" # Forever
 published = "2024-10-01"
@@ -327,7 +317,7 @@ description = "The percentage of job postings analyzed by lightcast that include
 [tables.skills_sought.editions.2025-01-01]
 edition_date = "2025-01-01"
 notes = "First upload of this dataset"
-raw_path = ""
+raw_path = "V:\\DATA\\Business and employment\\Lightcast\\Skills\\skills_required_20250116.csv"
 start = "2023-01-01" 
 end = "9999-12-31" # Forever
 published = "2024-10-01"
@@ -370,7 +360,7 @@ description = "The relevance of the current occupation to the destination occupa
 [tables.feeder_occupations.editions.2025-01-01]
 edition_date = "2025-01-01"
 notes = "First upload of this dataset"
-raw_path = ""
+raw_path = "V:\\DATA\\Business and employment\\Lightcast\\Occupations\\feeder_occupations_20240121.csv"
 start = "2023-01-01" 
 end = "9999-12-31" # Forever
 published = "2024-10-01"
@@ -390,11 +380,9 @@ source_url = "https://docs.lightcast.dev/apis/occupation-benchmark"
 # use_conditions = "Leave commented if not using"
 # cadence = "Leave commented if not using"
 
-
 [[tables.experience_level.variables]]
 name = "id"
 description = "The id for the experience level."
-
 
 [[tables.experience_level.variables]]
 name = "description"
@@ -403,7 +391,7 @@ description = "The description of the experience level."
 [tables.experience_level.editions.2025-01-01]
 edition_date = "2025-01-01"
 notes = "First upload of this dataset"
-raw_path = ""
+raw_path = "V:\\DATA\\Business and employment\\Lightcast\\Experience\\experience_levels_20250121.csv"
 start = "2023-01-01" 
 end = "9999-12-31" # Forever
 published = "2024-10-01"
@@ -437,7 +425,7 @@ description = "The percent of the time the experience level is requested on post
 [tables.experience_required.editions.2025-01-01]
 edition_date = "2025-01-01"
 notes = "First upload of this dataset"
-raw_path = ""
+raw_path = "V:\\DATA\\Business and employment\\Lightcast\\Experience\\experience_required_20250121.csv"
 start = "2023-01-01" 
 end = "9999-12-31" # Forever
 published = "2024-10-01"
@@ -457,7 +445,6 @@ source_url = "https://docs.lightcast.dev/apis/occupation-benchmark"
 # use_conditions = "Leave commented if not using"
 # cadence = "Leave commented if not using"
 
-
 [[tables.education_level.variables]]
 name = "id"
 description = "The internal id for the education level."
@@ -469,7 +456,7 @@ description = "The description for the education level."
 [tables.education_level.editions.2025-01-01]
 edition_date = "2025-01-01"
 notes = "First upload of this dataset"
-raw_path = ""
+raw_path = "V:\\DATA\\Business and employment\\Lightcast\\Education\\education_levels_20250121.csv"
 start = "2023-01-01" 
 end = "9999-12-31" # Forever
 published = "2024-10-01"
@@ -494,7 +481,6 @@ source_url = "https://docs.lightcast.dev/apis/occupation-benchmark"
 name = "code"
 description = "The SOC occupation code"
 
-
 [[tables.education_required.variables]]
 name = "ed_level_id"
 description = "The id for the education level table."
@@ -514,7 +500,7 @@ description = "The id of the most typically required education level for the occ
 [tables.education_required.editions.2025-01-01]
 edition_date = "2025-01-01"
 notes = "First upload of this dataset"
-raw_path = ""
+raw_path = "V:\\DATA\\Business and employment\\Lightcast\\Education\\education_level_required_20250121.csv"
 start = "2023-01-01" 
 end = "9999-12-31" # Forever
 published = "2024-10-01"
