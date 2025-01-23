@@ -1,6 +1,6 @@
+from typing import Any
 import pandera as pa
 from pandera.typing import Series
-import numpy as np
 import datetime
 
 
@@ -11,7 +11,7 @@ class Skills(pa.DataFrameModel):
     id: str = pa.Field(nullable=False)
     name: str = pa.Field(nullable=False)
     description: str = pa.Field(nullable=True)
-    embedding: Series[np.ndarray] = pa.Field(nullable=False)
+    embedding: Series[Any] = pa.Field(nullable=False) # This is a numpy ndarray
     # search vector for ts_search
 
     class Config:
@@ -30,7 +30,7 @@ class Occupation(pa.DataFrameModel):
     location_quotient: float = pa.Field()
     mean_experience: float = pa.Field()
     mean_salary: float = pa.Field()
-    embedding: Series[np.ndarray] = pa.Field(nullable=False)
+    embedding: Series[Any] = pa.Field(nullable=False)
     start: datetime.date = pa.Field()
     end: datetime.date = pa.Field(default=datetime.date(year=9999, month=12, day=31))
     # search vector for ts_search
@@ -96,9 +96,9 @@ class SkillsSought(pa.DataFrameModel):
     skill_id: str = pa.Field(nullable=False)
     significance: str = pa.Field(
         nullable=False, 
-        checks=pa.Check.isin(
-            {"common", "defining", "distinguishing", "salary-boosting"}
-        )
+        # checks=pa.Check.isin(
+        #    {"common", "defining", "distinguishing", "salary-boosting"}
+        # )
     )
     percentage: float = pa.Field(nullable=False)
 

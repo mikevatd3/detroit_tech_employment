@@ -3,105 +3,520 @@
 name = "detroit_tech_employment"
 description = "Lightcast data regarding tech-enabled employment in Detroit."
 
-[tables.codes] # The 'codes' table
-# If you don't want to provide any particular field, you can just comment 
-# it out and the DB will handle the nulls.
-name="codes"
-description = "The table that holds all NAICS codes and parent categories"
-unit_of_analysis = "Industry categories (+ parents & children)"
-universe = "Industry categories agreed on between Mexico, US, and Canada"
-owner = "Office of Management and budget (OMB)"
-collector = "Office of Management and budget (OMB)"
+
+[tables.skills]
+description = "Professional skills as defined by Lightcast"
+unit_of_analysis = "Professional Skill"
+universe = "4000ish skills as identified by Lightcast"
+owner = "Lightcast"
+collector = "Lightcast"
 # collection_method = "Leave commented if not using"
-collection_reason = """To allow for a high level of comparability in
-business statistics among the North American countries."""
-source_url = "https://www.census.gov/naics/?99967"
+collection_reason = "To compare common skills across occupations."
+source_url = "https://docs.lightcast.dev/apis/skills"
 # notes = "Leave commented if not using"
 # use_conditions = "Leave commented if not using"
 # cadence = "Leave commented if not using"
 
-# Variables are placed in their own sub-list with the table hierarchy
-[[tables.codes.variables]]
-# This var shows all the fields, but it's not necessary to include all in
-# every one. The DB app will figure it out.
-name = "code"
-description = "The code or parent code for each NAICS industry"
-parent_variable = "code"
-# suppression_threshold = "Leave commented if not using."
-standard = "NAICS"
 
-[[tables.codes.variables]]
-name = "title"
-description = "The name of the industry associated with the code"
-
-[[tables.codes.variables]]
-name = "description"
-description = "The code or parent code for each NAICS industry"
-
-# Editions tracks when items were uploaded.
-[tables.codes.editions.2024-10-01]
-# This is the key that identifies the edition in the system -- it should
-# be the month beginning, year beginning, or q beginning for this dataset.
-edition_date = "2024-10-01"
-
-# Any notes that go with the edition specifically.
-notes = "First upload of this dataset"
-
- # Path to the raw file REQUIRED
-raw_path = "/home/michael/projects/new/system/data/naics/raw/naics_descriptions_2022.csv"
-# 'start' & 'end' are special fields -- if they are defined, they will be 
-# appended to every row of the data table.
-
-
-# Think of 'start' & 'end' as though you were to query using a timestamp with 
-# BETWEEN and get a valid result. One of the checks will be that these
-# don't overlap between editions.
-
-# To really get into it, check out 'Allen's interval algebra.'
-start = "2024-01-01" 
-end = "9999-12-31" # This is the 'forever' standard. This should be 
-                   # applied to rows that are 'current.'
-
-# If you leave them undefined, it's best practice to have some kind of
-# date information in the variables.
-
-# These are for citations and only appear on the editions table.
-published = "2025-01-01"
-acquired = "2025-01-01" 
-
-
-[tables.industry_detail]
-name="industry_detail"
-description = "All detail codes for NAICS (no tree)"
-unit_of_analysis = "Industry categories (+ parents & children)"
-universe = "Industry categories agreed on between Mexico, US, and Canada"
-owner = "Office of Management and budget (OMB)"
-collector = "Office of Management and budget (OMB)"
-collection_reason = """To allow for a high level of comparability in
-business statistics among the North American countries."""
-source_url = "https://www.census.gov/naics/?99967"
-notes = """The code on this table can reference several industry descriptions."""
-
-[[tables.industry_detail.variables]]
+[[tables.skills.variables]]
 name = "id"
-description = "An surrogate ID number for each description."
+description = "The Lightcast assigned id for the skill"
 
-[[tables.industry_detail.variables]]
-name = "code"
-description = "The code that best aligns with the industry described"
-standard = "NAICS"
+[[tables.skills.variables]]
+name = "name"
+description = "The name of the skill"
 
-[[tables.industry_detail.variables]]
-name = "industry_description"
-description = "The detailed description of an industry associtaed with the naics code."
+[[tables.skills.variables]]
+name = "description"
+description = "The definition of the skill (used to create the embedding)."
 
-[tables.industry_detail.editions.2025-01-01]
+[[tables.skills.variables]]
+name = "embedding"
+description = "The word vector created with Spacy en-core-web-lg model."
+
+[tables.skills.editions.2025-01-01]
 edition_date = "2025-01-01"
 notes = "First upload of this dataset"
-raw_path = "/home/michael/projects/new/system/data/naics/raw/naics_index_file_2022.csv"
-start = "2024-01-01" 
-end = "9999-12-31"
-published = "2025-01-01"
-acquired = "2025-01-01" 
+raw_path = ""
+start = "2023-01-01" 
+end = "9999-12-31" # Forever
+published = "2024-10-01" # Q4 ?
+acquired = "2025-01-20" 
 
+
+[tables.occupation]
+description = "Occupation base table. This is connected to SOC codes (Lightcast modified)."
+unit_of_analysis = "Occupation"
+universe = "799 Lightcast defined occupations"
+owner = "Lightcast"
+collector = "Lightcast"
+# collection_method = "Leave commented if not using"
+collection_reason = "For studying market trends in employment."
+source_url = "https://kb.lightcast.io/en/articles/7934024-lightcast-occupations"
+# notes = "Leave commented if not using"
+# use_conditions = "Leave commented if not using"
+# cadence = "Leave commented if not using"
+
+
+[[tables.occupation.variables]]
+name = "geoid"
+description = "This is the geoid for the occupation (MSA minimum level)"
+
+
+[[tables.occupation.variables]]
+name = "code"
+description = "The SOC code (with Lightcast alterations)"
+
+
+[[tables.occupation.variables]]
+name = "name"
+description = "The name of the occupation associated with the code."
+
+
+[[tables.occupation.variables]]
+name = "description"
+description = "The definition of the occupation."
+
+
+[[tables.occupation.variables]]
+name = "risk_score"
+description = "Automation risk for the occupation, calculated by lightcast: https://kb.lightcast.io/en/articles/7124927-automation-index"
+
+
+[[tables.occupation.variables]]
+name = "location_quotient"
+description = "Occupation's share of employment in the given location: https://kb.lightcast.io/en/articles/7934027-location-quotient-lq."
+
+[[tables.occupation.variables]]
+name = "mean_experience"
+description = "The mean number of years of experience requested for this occupation."
+
+[[tables.occupation.variables]]
+name = "mean_salary"
+description = "The mean annual salary for this occupation."
+
+[[tables.occupation.variables]]
+name = "embedding"
+description = "The word embedding (Spacy en-core-web-small) for the 'description' field."
+
+[[tables.occupation.variables]]
+name = "start"
+description = "The dataset start to plan ahead for further data pulls."
+
+[[tables.occupation.variables]]
+name = "end"
+description = "Set to forever (9999-12-31) for the active rows for the given occupation."
+
+[tables.occupation.editions.2025-01-01]
+edition_date = "2025-01-01"
+notes = "First upload of this dataset"
+raw_path = ""
+start = "2025-01-01" 
+end = "9999-12-31" # Forever
+published = "2024-10-01"
+acquired = "2025-01-20" 
+
+
+[tables.historical_earnings]
+description = "The historical earnings by year for a given occupation."
+unit_of_analysis = "occupation & year & location (zip or county)"
+universe = "2015-2023 for 799 Occupations (Lightcast modified SOC)"
+owner = "Lightcast"
+collector = "Lightcast"
+# collection_method = "Leave commented if not using"
+collection_reason = "Measuring trends in pay for occupations"
+source_url = "https://kb.lightcast.io/en/articles/7932823-historical-wages"
+# notes = "Leave commented if not using"
+# use_conditions = "Leave commented if not using"
+# cadence = "Leave commented if not using"
+
+
+[[tables.historical_earnings.variables]]
+name = "code"
+description = "KEY: The lightcast SOC code for the occupation associated with the earnings."
+
+[[tables.historical_earnings.variables]]
+name = "geoid"
+description = "KEY: The geoid (zcta, county, or msa) for the geography associated with the earnings values."
+
+[[tables.historical_earnings.variables]]
+name = "year"
+description = "The year associated with the earnings values."
+
+
+[[tables.historical_earnings.variables]]
+name = "average_hourly"
+description = "The average hourly rate for the occupation for the year and geoid"
+
+
+[[tables.historical_earnings.variables]]
+name = "median_annual"
+description = "The median annual earnings for the occupation for the year and geoid"
+
+
+[tables.historical_earnings.editions.2025-01-01]
+edition_date = "2025-01-01"
+notes = "First upload of this dataset"
+raw_path = ""
+start = "<start date>" 
+end = "9999-12-31" # Forever
+published = "2024-10-01"
+acquired = "2024-10-20" 
+
+
+[tables.positions]
+description = """The past and future estimates for available positions, and 
+churn for an occupation in a given year and geoid"""
+unit_of_analysis = "Occupation & Location & Year"
+universe = """799 SOC Occupations, zip codes, counties, and the msa for metro 
+Detroit, for years 2015-2024 and projected to 2034"""
+owner = "Lightcast"
+collector = "Lightcast"
+# collection_method = "Leave commented if not using"
+collection_reason = "To study labor markets."
+source_url = "https://kb.lightcast.io/en/articles/7934024-lightcast-occupations"
+# notes = "Leave commented if not using"
+# use_conditions = "Leave commented if not using"
+# cadence = "Leave commented if not using"
+
+
+[[tables.positions.variables]]
+name = "code"
+description = "The (Lightcast adjusted) SOC code for the occupation."
+
+
+[[tables.positions.variables]]
+name = "geoid"
+description = "The geoid for the geography of the estimate"
+
+
+[[tables.positions.variables]]
+name = "year"
+description = "The year of the estimate"
+
+[[tables.positions.variables]]
+name = "jobs"
+description = "The number of jobs for the occupation in the given year and location."
+
+[[tables.positions.variables]]
+name = "residence_jobs"
+description = "The number of people working in a given occupation who live in this location in this year"
+
+[[tables.positions.variables]]
+name = "openings"
+description = "The number of unfilled jobs in this occupation for this location and year."
+
+[[tables.positions.variables]]
+name = "replacements"
+description = "The number of employees working in the occupation who will need to be replaced in the given location and year"
+
+[[tables.positions.variables]]
+name = "growth"
+description = "The number of new positions that will need to be filled in the given occupation, location, and year."
+
+[tables.positions.editions.2025-01-01]
+edition_date = "2025-01-01"
+notes = "First upload of this dataset"
+raw_path = ""
+start = "2023-01-01" 
+end = "9999-12-31" # Forever
+published = "2024-10-01"
+acquired = "2025-01-15" 
+
+
+[tables.earnings_distribution]
+description = "The distribution of earnings for the occupation (most recent - 2023)"
+unit_of_analysis = "Occupation"
+universe = "799 Lightcast-specific occupations"
+owner = "Lightcast"
+collector = "Lightcast"
+# collection_method = "Leave commented if not using"
+collection_reason = "Study the labor market"
+source_url = "https://kb.lightcast.io/en/articles/7934068-occupation-earnings"
+# notes = "Leave commented if not using"
+# use_conditions = "Leave commented if not using"
+# cadence = "Leave commented if not using"
+
+[[tables.earnings_distribution.variables]]
+name = "code"
+description = "The occupation code related to the earnings distribution."
+
+[[tables.earnings_distribution.variables]]
+name = "geoid"
+description = "The location related to the earnings distribution (msa only currently)"
+
+[[tables.earnings_distribution.variables]]
+name = "hourly_10th_pctl"
+description = "The 10th percentile hourly earnings for this occupation"
+
+
+[[tables.earnings_distribution.variables]]
+name = "hourly_25th_pctl"
+description = "The 25th percentile hourly earnings for this occupation"
+# suppression_threshold = "Leave commented if not using."
+# standard = "Leave commented if not using."
+
+
+[[tables.earnings_distribution.variables]]
+name = "hourly_50th_pctl"
+description = "The 50th percentile hourly earnings for this occupation"
+
+[[tables.earnings_distribution.variables]]
+name = "hourly_75th_pctl"
+description = "The 75th percentile hourly earnings for this occupation"
+
+[[tables.earnings_distribution.variables]]
+name = "hourly_90th_pctl"
+description = "The 90th percentile hourly earnings for this occupation"
+
+[[tables.earnings_distribution.variables]]
+name = "hourly_mean"
+description = "The mean hourly earnings for the occupation"
+
+[[tables.earnings_distribution.variables]]
+name = "median_annual"
+description = "The median annual income reported for the occupation"
+
+[[tables.earnings_distribution.variables]]
+name = "start"
+description = "The valid from date for the distribution since the API only provides a single year."
+
+[[tables.earnings_distribution.variables]]
+name = "end"
+description = "The valid to date for the distribution."
+
+[tables.earnings_distribution.editions.2025-01-01]
+edition_date = "2025-01-01"
+notes = "First upload of this dataset"
+raw_path = ""
+start = "2023-01-01" 
+end = "9999-12-31" # Forever
+published = "2024-10-01"
+acquired = "2025-01-20" 
+
+[tables.skills_sought]
+description = """A many to many table joining occupations to the 
+skills that are commonly requested for those roles."""
+unit_of_analysis = "Skills & Occupations"
+universe = "Skills required for Lightcast coded occupations"
+owner = "Lightcast"
+collector = "Lightcast"
+# collection_method = "Leave commented if not using"
+collection_reason = "Labor market research"
+source_url = "https://docs.lightcast.dev/apis/skills"
+# notes = "Leave commented if not using"
+# use_conditions = "Leave commented if not using"
+# cadence = "Leave commented if not using"
+
+[[tables.skills_sought.variables]]
+name = "occ_code"
+description = "The (Lightcast-specific) SOC code."
+
+[[tables.skills_sought.variables]]
+name = "skill_id"
+description = "The Lightcast-created skill id connected to the skills table."
+
+[[tables.skills_sought.variables]]
+name = "significance"
+description = "The importance of the skill to the role."
+
+[[tables.skills_sought.variables]]
+name = "percentage"
+description = "The percentage of job postings analyzed by lightcast that included the skill"
+
+[tables.skills_sought.editions.2025-01-01]
+edition_date = "2025-01-01"
+notes = "First upload of this dataset"
+raw_path = ""
+start = "2023-01-01" 
+end = "9999-12-31" # Forever
+published = "2024-10-01"
+acquired = "2025-01-20" 
+
+
+[tables.feeder_occupations]
+description = "A many to many table showing the advancement relationships between occupations."
+unit_of_analysis = "Occupations"
+universe = "Lightcast occupations"
+owner = "Lightcast"
+collector = "Lightcast"
+# collection_method = "Leave commented if not using"
+collection_reason = "Labor market research"
+source_url = "https://kb.lightcast.io/en/articles/6641056-lightcast-career-pathways"
+# notes = "Leave commented if not using"
+# use_conditions = "Leave commented if not using"
+# cadence = "Leave commented if not using"
+
+[[tables.feeder_occupations.variables]]
+name = "current"
+description = "The SOC code for the current occupation"
+
+[[tables.feeder_occupations.variables]]
+name = "next_step"
+description = "The SOC code for the destination occupation"
+
+[[tables.feeder_occupations.variables]]
+name = "mean_salary_diff"
+description = "The difference in annual salary between destination and current occupation."
+
+[[tables.feeder_occupations.variables]]
+name = "category"
+description = "The type of career change (lateral, advancement, etc.)"
+
+[[tables.feeder_occupations.variables]]
+name = "score"
+description = "The relevance of the current occupation to the destination occupation"
+
+[tables.feeder_occupations.editions.2025-01-01]
+edition_date = "2025-01-01"
+notes = "First upload of this dataset"
+raw_path = ""
+start = "2023-01-01" 
+end = "9999-12-31" # Forever
+published = "2024-10-01"
+acquired = "2025-01-22" 
+
+
+[tables.experience_level]
+description = "The experience level descriptions for the occupations."
+unit_of_analysis = "Experience levels"
+universe = "Experience levels from 0-9+ years"
+owner = "Lightcast"
+collector = "Lightcast"
+# collection_method = "Leave commented if not using"
+collection_reason = "Labor market research"
+source_url = "https://docs.lightcast.dev/apis/occupation-benchmark"
+# notes = "Leave commented if not using"
+# use_conditions = "Leave commented if not using"
+# cadence = "Leave commented if not using"
+
+
+[[tables.experience_level.variables]]
+name = "id"
+description = "The id for the experience level."
+
+
+[[tables.experience_level.variables]]
+name = "description"
+description = "The description of the experience level."
+
+[tables.experience_level.editions.2025-01-01]
+edition_date = "2025-01-01"
+notes = "First upload of this dataset"
+raw_path = ""
+start = "2023-01-01" 
+end = "9999-12-31" # Forever
+published = "2024-10-01"
+acquired = "2025-01-20" 
+
+[tables.experience_required]
+description = "The many to many showing the distribution of openings for an occupation that require a given experience level."
+unit_of_analysis = "Occupations"
+universe = "Lightcast SOC occupations and experience levels"
+owner = "Lightcast"
+collector = "Lightcast"
+# collection_method = "Leave commented if not using"
+collection_reason = "Labor market research"
+source_url = "https://docs.lightcast.dev/apis/occupation-benchmark"
+# notes = "Leave commented if not using"
+# use_conditions = "Leave commented if not using"
+# cadence = "Leave commented if not using"
+
+[[tables.experience_required.variables]]
+name = "code"
+description = "The Lightcast SOC code"
+
+[[tables.experience_required.variables]]
+name = "exp_level_id"
+description = "The experience level requested"
+
+[[tables.experience_required.variables]]
+name = "percentage"
+description = "The percent of the time the experience level is requested on postings"
+
+[tables.experience_required.editions.2025-01-01]
+edition_date = "2025-01-01"
+notes = "First upload of this dataset"
+raw_path = ""
+start = "2023-01-01" 
+end = "9999-12-31" # Forever
+published = "2024-10-01"
+acquired = "2025-01-20" 
+
+
+[tables.education_level]
+description = "The education levels requested on job postings, coded by Lightcast."
+unit_of_analysis = "Education levels"
+universe = "HS/GED - PHD"
+owner = "Lightcast"
+collector = "Lightcast"
+# collection_method = "Leave commented if not using"
+collection_reason = "Labor market research"
+source_url = "https://docs.lightcast.dev/apis/occupation-benchmark"
+# notes = "Leave commented if not using"
+# use_conditions = "Leave commented if not using"
+# cadence = "Leave commented if not using"
+
+
+[[tables.education_level.variables]]
+name = "id"
+description = "The internal id for the education level."
+
+[[tables.education_level.variables]]
+name = "description"
+description = "The description for the education level."
+
+[tables.education_level.editions.2025-01-01]
+edition_date = "2025-01-01"
+notes = "First upload of this dataset"
+raw_path = ""
+start = "2023-01-01" 
+end = "9999-12-31" # Forever
+published = "2024-10-01"
+acquired = "2025-01-20" 
+
+
+[tables.education_required]
+description = "The many to many table relating the education levels to occupations"
+unit_of_analysis = "Occupations"
+universe = "Occupations and required education levels"
+owner = "Lightcast"
+collector = "Lightcast"
+# collection_method = "Leave commented if not using"
+collection_reason = "Labor market research"
+source_url = "https://docs.lightcast.dev/apis/occupation-benchmark"
+# notes = "Leave commented if not using"
+# use_conditions = "Leave commented if not using"
+# cadence = "Leave commented if not using"
+
+
+[[tables.education_required.variables]]
+name = "code"
+description = "The SOC occupation code"
+
+
+[[tables.education_required.variables]]
+name = "ed_level_id"
+description = "The id for the education level table."
+
+[[tables.education_required.variables]]
+name = "count"
+description = "The count of roles seeking that education level"
+
+[[tables.education_required.variables]]
+name = "percentage"
+description = "The percentage of roles seeking that education level"
+
+[[tables.education_required.variables]]
+name = "typical"
+description = "The id of the most typically required education level for the occupation."
+
+[tables.education_required.editions.2025-01-01]
+edition_date = "2025-01-01"
+notes = "First upload of this dataset"
+raw_path = ""
+start = "2023-01-01" 
+end = "9999-12-31" # Forever
+published = "2024-10-01"
+acquired = "2025-01-20" 
 
