@@ -11,8 +11,8 @@ class Skills(pa.DataFrameModel):
     id: str = pa.Field(nullable=False)
     name: str = pa.Field(nullable=False)
     description: str = pa.Field(nullable=True)
-    embedding: Series[Any] = pa.Field(nullable=False) # This is a numpy ndarray
-    # search vector for ts_search
+    # embedding: Series[Any] = pa.Field(nullable=False) # This is a numpy ndarray
+    # search vector for ts_search FUTURE
 
     class Config:
         strict = True
@@ -30,9 +30,9 @@ class Occupation(pa.DataFrameModel):
     location_quotient: float = pa.Field(coerce=True)
     mean_experience: float = pa.Field(nullable=True, coerce=True)
     mean_salary: float = pa.Field(nullable=True, coerce=True)
-    embedding: Series[Any] = pa.Field(nullable=False)
     start: Series[datetime.date] = pa.Field(coerce=True)
     end: Series[datetime.date] = pa.Field()
+    # embedding: Series[Any] = pa.Field(nullable=False)
     # search vector for ts_search
 
     class Config:

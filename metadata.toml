@@ -4,6 +4,7 @@ name = "detroit_tech_employment"
 description = "Lightcast data regarding tech-enabled employment in Detroit."
 
 [tables.skills]
+name="skills"
 description = "Professional skills as defined by Lightcast"
 unit_of_analysis = "Professional Skill"
 universe = "4000ish skills as identified by Lightcast"
@@ -28,9 +29,10 @@ description = "The name of the skill"
 name = "description"
 description = "The definition of the skill (used to create the embedding)."
 
-[[tables.skills.variables]]
-name = "embedding"
-description = "The word vector created with Spacy en-core-web-lg model."
+# We'll try for this later
+# [[tables.skills.variables]]
+# name = "embedding"
+# description = "The word vector created with Spacy en-core-web-lg model."
 
 [tables.skills.editions.2025-01-01]
 edition_date = "2025-01-01"
@@ -43,6 +45,7 @@ acquired = "2025-01-20"
 
 
 [tables.occupation]
+name="occupation"
 description = "Occupation base table. This is connected to SOC codes (Lightcast modified)."
 unit_of_analysis = "Occupation"
 universe = "799 Lightcast defined occupations"
@@ -93,9 +96,10 @@ description = "The mean number of years of experience requested for this occupat
 name = "mean_salary"
 description = "The mean annual salary for this occupation."
 
-[[tables.occupation.variables]]
-name = "embedding"
-description = "The word embedding (Spacy en-core-web-small) for the 'description' field."
+# Again, we'll try for this later
+# [[tables.occupation.variables]]
+# name = "embedding"
+# description = "The word embedding (Spacy en-core-web-small) for the 'description' field."
 
 [[tables.occupation.variables]]
 name = "start"
@@ -116,6 +120,7 @@ acquired = "2025-01-20"
 
 
 [tables.historical_earnings]
+name="historical_earnings"
 description = "The historical earnings by year for a given occupation."
 unit_of_analysis = "occupation & year & location (zip or county)"
 universe = "2015-2023 for 799 Occupations (Lightcast modified SOC)"
@@ -162,6 +167,7 @@ acquired = "2024-10-20"
 
 
 [tables.positions]
+name="positions"
 description = """The past and future estimates for available positions, and 
 churn for an occupation in a given year and geoid"""
 unit_of_analysis = "Occupation & Location & Year"
@@ -285,6 +291,7 @@ published = "2024-10-01"
 acquired = "2025-01-20" 
 
 [tables.skills_sought]
+name="skills_sought"
 description = """A many to many table joining occupations to the 
 skills that are commonly requested for those roles."""
 unit_of_analysis = "Skills & Occupations"
@@ -329,6 +336,7 @@ acquired = "2025-01-20"
 
 
 [tables.feeder_occupations]
+name="feeder_occupations"
 description = "A many to many table showing the advancement relationships between occupations."
 unit_of_analysis = "Occupations"
 universe = "Lightcast occupations"
@@ -372,6 +380,7 @@ acquired = "2025-01-22"
 
 
 [tables.experience_level]
+name="experience_level"
 description = "The experience level descriptions for the occupations."
 unit_of_analysis = "Experience levels"
 universe = "Experience levels from 0-9+ years"
@@ -402,6 +411,7 @@ published = "2024-10-01"
 acquired = "2025-01-20" 
 
 [tables.experience_required]
+name="experience_required"
 description = "The many to many showing the distribution of openings for an occupation that require a given experience level."
 unit_of_analysis = "Occupations"
 universe = "Lightcast SOC occupations and experience levels"
@@ -437,6 +447,7 @@ acquired = "2025-01-20"
 
 
 [tables.education_level]
+name="experience_level"
 description = "The education levels requested on job postings, coded by Lightcast."
 unit_of_analysis = "Education levels"
 universe = "HS/GED - PHD"
@@ -468,6 +479,7 @@ acquired = "2025-01-20"
 
 
 [tables.education_required]
+name="education_required"
 description = "The many to many table relating the education levels to occupations"
 unit_of_analysis = "Occupations"
 universe = "Occupations and required education levels"

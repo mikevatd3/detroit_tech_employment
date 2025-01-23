@@ -6873,3 +6873,37 @@
 [INFO|load_all_tables.py|main|L72] @ 2025-01-23 11:56:02,192: education_level loaded successfully. Validating.
 [INFO|load_all_tables.py|main|L60] @ 2025-01-23 11:56:02,195: Loading education_required.
 [INFO|load_all_tables.py|main|L72] @ 2025-01-23 11:56:02,321: education_required loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L62] @ 2025-01-23 11:59:43,153: Loading skills.
+[INFO|load_all_tables.py|main|L74] @ 2025-01-23 11:59:46,261: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L79] @ 2025-01-23 11:59:46,811: Connected to metadata schema.
+[INFO|capture.py|record_metadata|L17] @ 2025-01-23 11:59:46,811: Reached record_metadata function.
+[INFO|load_all_tables.py|main|L62] @ 2025-01-23 12:06:47,229: Loading skills.
+[INFO|load_all_tables.py|main|L74] @ 2025-01-23 12:06:50,211: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L62] @ 2025-01-23 12:07:04,324: Loading skills.
+[INFO|load_all_tables.py|main|L74] @ 2025-01-23 12:07:09,559: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L80] @ 2025-01-23 12:07:10,374: Connected to metadata schema.
+[INFO|capture.py|record_metadata|L17] @ 2025-01-23 12:07:10,376: Reached record_metadata function.
+[INFO|load_all_tables.py|main|L62] @ 2025-01-23 12:07:33,288: Loading skills.
+[INFO|load_all_tables.py|main|L74] @ 2025-01-23 12:07:37,025: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L62] @ 2025-01-23 12:07:57,743: Loading skills.
+[INFO|load_all_tables.py|main|L74] @ 2025-01-23 12:08:03,220: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L81] @ 2025-01-23 12:08:03,742: Connected to metadata schema.
+[INFO|capture.py|record_metadata|L17] @ 2025-01-23 12:08:03,743: Reached record_metadata function.
+[INFO|load_all_tables.py|main|L62] @ 2025-01-23 12:08:47,587: Loading skills.
+[INFO|load_all_tables.py|main|L74] @ 2025-01-23 12:08:49,739: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L62] @ 2025-01-23 12:12:57,405: Loading skills.
+[INFO|load_all_tables.py|main|L74] @ 2025-01-23 12:13:02,180: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 13:43:19,442: Loading skills.
+[INFO|load_all_tables.py|main|L76] @ 2025-01-23 13:43:21,630: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 13:44:43,134: Loading skills.
+[INFO|load_all_tables.py|main|L76] @ 2025-01-23 13:44:46,307: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L81] @ 2025-01-23 13:44:46,746: Connected to metadata schema.
+[INFO|capture.py|record_metadata|L17] @ 2025-01-23 13:44:46,746: Reached record_metadata function.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 13:45:30,168: Loading skills.
+[INFO|load_all_tables.py|main|L76] @ 2025-01-23 13:45:31,295: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L81] @ 2025-01-23 13:45:31,687: Connected to metadata schema.
+[INFO|capture.py|record_metadata|L17] @ 2025-01-23 13:45:31,692: Reached record_metadata function.
+[INFO|load_all_tables.py|main|L64] @ 2025-01-23 13:49:42,391: Loading skills.
+[INFO|load_all_tables.py|main|L76] @ 2025-01-23 13:49:43,473: skills loaded successfully. Validating.
+[INFO|load_all_tables.py|main|L81] @ 2025-01-23 13:49:43,881: Connected to metadata schema.
+[INFO|capture.py|record_metadata|L17] @ 2025-01-23 13:49:43,881: Reached record_metadata function.
