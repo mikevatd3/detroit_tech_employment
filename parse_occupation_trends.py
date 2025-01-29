@@ -76,7 +76,7 @@ with open("occupation_trends_results_2015_2034_20250122.jsonl") as f:
         # Positions
 
         years = []
-        for year in range(2015, 2024):
+        for year in range(2015, 2035):
             positions_cols = {
                 f"Area": "geoid",
                 f"Occupation": "code",
