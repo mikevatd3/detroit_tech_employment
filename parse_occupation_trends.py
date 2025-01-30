@@ -94,7 +94,7 @@ with open("occupation_trends_results_2015_2034_20250122.jsonl") as f:
             }).assign(year=datetime.datetime(year=year, month=1, day=1)))
 
         pd.concat(years, axis=0).to_parquet(
-            "positions_20250121.parquet.gzip", 
+            "positions_20250130.parquet.gzip", 
             engine="fastparquet", 
             index=False, 
             append=append
